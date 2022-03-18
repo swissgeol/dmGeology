@@ -17,10 +17,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Unconsolidated_Deposits_PT_Kind;
-    STRUCTURE Ref_Runc101
+    STRUCTURE Ref_14401
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Unconsolidated_Deposits_PT_Kind;
-    END Ref_Runc101;
+    END Ref_14401;
 
     CLASS Unconsolidated_Deposits_PT_Status
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -28,10 +28,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Status : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Unconsolidated_Deposits_PT_Status;
-    STRUCTURE Ref_Runc102
+    STRUCTURE Ref_14402
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Unconsolidated_Deposits_PT_Status;
-    END Ref_Runc102;
+    END Ref_14402;
 
     CLASS Unconsolidated_Deposits_PT_Rock_Typ
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -39,10 +39,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Rock_Typ : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Unconsolidated_Deposits_PT_Rock_Typ;
-    STRUCTURE Ref_Runc103
+    STRUCTURE Ref_14403
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Unconsolidated_Deposits_PT_Rock_Typ;
-    END Ref_Runc103;
+    END Ref_14403;
 
     CLASS Unconsolidated_Deposits_PT_Rock_Spe
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -50,10 +50,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Rock_Spe : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Unconsolidated_Deposits_PT_Rock_Spe;
-    STRUCTURE Ref_Runc104
+    STRUCTURE Ref_14404
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Unconsolidated_Deposits_PT_Rock_Spe;
-    END Ref_Runc104;
+    END Ref_14404;
 
     CLASS Unconsolidated_Deposits_PLG_Kind 
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
@@ -61,10 +61,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Unconsolidated_Deposits_PLG_Kind;
-    STRUCTURE Ref_Vlit201
+    STRUCTURE Ref_14517
     EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Unconsolidated_Deposits_PLG_Kind;
-    END Ref_Vlit201;
+    END Ref_14517;
 
     CLASS Unconsolidated_Deposits_PLG_Composit
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -72,10 +72,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Composit : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Unconsolidated_Deposits_PLG_Composit;
-    STRUCTURE Ref_Runc308
+    STRUCTURE Ref_14508
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Unconsolidated_Deposits_PLG_Composit;
-    END Ref_Runc308;
+    END Ref_14508;
 
     CLASS Unconsolidated_Deposits_PLG_Admixtur
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -83,10 +83,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Admixtur : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Unconsolidated_Deposits_PLG_Admixtur;
-    STRUCTURE Ref_Runc309
+    STRUCTURE Ref_14509
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Unconsolidated_Deposits_PLG_Admixtur;
-    END Ref_Runc309;
+    END Ref_14509;
 
     CLASS Unconsolidated_Deposits_PLG_Structur
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -94,10 +94,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Structur : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Unconsolidated_Deposits_PLG_Structur;
-    STRUCTURE Ref_Runc310
+    STRUCTURE Ref_14510
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Unconsolidated_Deposits_PLG_Structur;
-    END Ref_Runc310;
+    END Ref_14510;
 
     CLASS Unconsolidated_Deposits_PLG_Charact
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -105,10 +105,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Charact : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Unconsolidated_Deposits_PLG_Charact;
-    STRUCTURE Ref_Runc311
+    STRUCTURE Ref_14511
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Unconsolidated_Deposits_PLG_Charact;
-    END Ref_Runc311;
+    END Ref_14511;
 
     CLASS Unconsolidated_Deposits_PLG_Morpholo
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -116,10 +116,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Morpholo : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Unconsolidated_Deposits_PLG_Morpholo;
-    STRUCTURE Ref_Runc312
+    STRUCTURE Ref_14512
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Unconsolidated_Deposits_PLG_Morpholo;
-    END Ref_Runc312;
+    END Ref_14512;
 
     CLASS Unconsolidated_Deposits_PLG_Glac_Typ
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -127,10 +127,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Glac_Typ : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Unconsolidated_Deposits_PLG_Glac_Typ;
-    STRUCTURE Ref_Runc313
+    STRUCTURE Ref_14513
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Unconsolidated_Deposits_PLG_Glac_Typ;
-    END Ref_Runc313;
+    END Ref_14513;
 
     CLASS Unconsolidated_Deposits_PLG_Thin_Cov
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -138,10 +138,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Thin_Cov : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Unconsolidated_Deposits_PLG_Thin_Cov;
-    STRUCTURE Ref_Runc315
+    STRUCTURE Ref_14515
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Unconsolidated_Deposits_PLG_Thin_Cov;
-    END Ref_Runc315;
+    END Ref_14515;
 
     CLASS Bedrock_PLG_Kind 
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
@@ -149,10 +149,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Bedrock_PLG_Kind;
-    STRUCTURE Ref_Rbed301
+    STRUCTURE Ref_14334
     EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Bedrock_PLG_Kind;
-    END Ref_Rbed301;
+    END Ref_14334;
 
     CLASS Bedrock_PLG_Fm_Homog 
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -160,10 +160,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Fm_Homog : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Bedrock_PLG_Fm_Homog;
-    STRUCTURE Ref_Rbed302
+    STRUCTURE Ref_14302
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Bedrock_PLG_Fm_Homog;
-    END Ref_Rbed302;
+    END Ref_14302;
 
     CLASS Bedrock_PLG_Sedimentary_Rocks_Sedi_Main_Com 
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -171,10 +171,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Main_Com : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Bedrock_PLG_Sedimentary_Rocks_Sedi_Main_Com;
-    STRUCTURE Ref_Rbed311
+    STRUCTURE Ref_15602
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Bedrock_PLG_Sedimentary_Rocks_Sedi_Main_Com;
-    END Ref_Rbed311;
+    END Ref_15602;
 
     CLASS Bedrock_PLG_Sedimentary_Rocks_Sedi_Seco_Com 
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -182,10 +182,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Seco_Com : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Bedrock_PLG_Sedimentary_Rocks_Sedi_Seco_Com;
-    STRUCTURE Ref_Rbed312
+    STRUCTURE Ref_20001
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Bedrock_PLG_Sedimentary_Rocks_Sedi_Seco_Com;
-    END Ref_Rbed312;
+    END Ref_20001;
 
     CLASS Bedrock_PLG_Sedimentary_Rocks_Sedi_Bond_Mat 
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -193,10 +193,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Bond_Mat : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Bedrock_PLG_Sedimentary_Rocks_Sedi_Bond_Mat;
-    STRUCTURE Ref_Rbed313
+    STRUCTURE Ref_14313
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Bedrock_PLG_Sedimentary_Rocks_Sedi_Bond_Mat;
-    END Ref_Rbed313;
+    END Ref_14313;
 
     CLASS Bedrock_PLG_Sedimentary_Rocks_Sedi_Bedding 
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -204,10 +204,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Bedding : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Bedrock_PLG_Sedimentary_Rocks_Sedi_Bedding;
-    STRUCTURE Ref_Rbed314
+    STRUCTURE Ref_20101
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Bedrock_PLG_Sedimentary_Rocks_Sedi_Bedding;
-    END Ref_Rbed314;
+    END Ref_20101;
 
     CLASS Bedrock_PLG_Sedimentary_Rocks_Sedi_Str 
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -215,10 +215,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Sedi_Str : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Bedrock_PLG_Sedimentary_Rocks_Sedi_Str;
-    STRUCTURE Ref_Rbed315
+    STRUCTURE Ref_20201
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Bedrock_PLG_Sedimentary_Rocks_Sedi_Str;
-    END Ref_Rbed315;
+    END Ref_20201;
 
     CLASS Bedrock_PLG_Sedimentary_Rocks_Sedi_Tex 
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -226,10 +226,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Sedi_Tex : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Bedrock_PLG_Sedimentary_Rocks_Sedi_Tex;
-    STRUCTURE Ref_Rbed316
+    STRUCTURE Ref_20301
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Bedrock_PLG_Sedimentary_Rocks_Sedi_Tex;
-    END Ref_Rbed316;
+    END Ref_20301;
 
     CLASS Bedrock_PLG_Igneous_Rocks_Igne_Tex 
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -237,10 +237,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Igne_Tex : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Bedrock_PLG_Igneous_Rocks_Igne_Tex;
-    STRUCTURE Ref_Rbed317
+    STRUCTURE Ref_14317
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Bedrock_PLG_Igneous_Rocks_Igne_Tex;
-    END Ref_Rbed317;
+    END Ref_14317;
 
     CLASS Bedrock_PLG_Igneous_Rocks_Igne_Grain_Si 
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -248,10 +248,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Grain_Si : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Bedrock_PLG_Igneous_Rocks_Igne_Grain_Si;
-    STRUCTURE Ref_Rbed318
+    STRUCTURE Ref_14318
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Bedrock_PLG_Igneous_Rocks_Igne_Grain_Si;
-    END Ref_Rbed318;
+    END Ref_14318;
 
     CLASS Bedrock_PLG_Igneous_Rocks_Igne_Affinity 
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -259,10 +259,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Affinity : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Bedrock_PLG_Igneous_Rocks_Igne_Affinity;
-    STRUCTURE Ref_Rbed319
+    STRUCTURE Ref_15733
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Bedrock_PLG_Igneous_Rocks_Igne_Affinity;
-    END Ref_Rbed319;
+    END Ref_15733;
 
     CLASS Bedrock_PLG_Metamorphic_Rocks_Meta_Mineral
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -270,10 +270,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Mineral : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Bedrock_PLG_Metamorphic_Rocks_Meta_Mineral;
-    STRUCTURE Ref_Rbed322
+    STRUCTURE Ref_20401
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Bedrock_PLG_Metamorphic_Rocks_Meta_Mineral;
-    END Ref_Rbed322;
+    END Ref_20401;
 
     CLASS Bedrock_PLG_Metamorphic_Rocks_Meta_Str
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -281,10 +281,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Meta_Str : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Bedrock_PLG_Metamorphic_Rocks_Meta_Str;
-    STRUCTURE Ref_Rbed325
+    STRUCTURE Ref_20501
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Bedrock_PLG_Metamorphic_Rocks_Meta_Str;
-    END Ref_Rbed325;
+    END Ref_20501;
 
     CLASS Instability_Structures_PT_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -292,10 +292,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Instability_Structures_PT_Kind;
-    STRUCTURE Ref_Gins101
+    STRUCTURE Ref_11601
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Instability_Structures_PT_Kind;
-    END Ref_Gins101;
+    END Ref_11601;
 
     CLASS Instability_Structures_L_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -303,10 +303,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Instability_Structures_L_Kind;
-    STRUCTURE Ref_Gins201
+    STRUCTURE Ref_11701
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Instability_Structures_L_Kind;
-    END Ref_Gins201;
+    END Ref_11701;
 
     CLASS Instabilities_within_Unconsolidated_Deposits_PLG_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -314,10 +314,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Instabilities_within_Unconsolidated_Deposits_PLG_Kind;
-    STRUCTURE Ref_Ginu301
+    STRUCTURE Ref_11801
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Instabilities_within_Unconsolidated_Deposits_PLG_Kind;
-    END Ref_Ginu301;
+    END Ref_11801;
 
     CLASS Instabilities_within_Bedrock_PLG_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -325,10 +325,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Instabilities_within_Bedrock_PLG_Kind;
-    STRUCTURE Ref_Ginb301
+    STRUCTURE Ref_11501
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Instabilities_within_Bedrock_PLG_Kind;
-    END Ref_Ginb301;
+    END Ref_11501;
 
     CLASS Instabilities_within_Bedrock_PLG_Main_Mov
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -336,10 +336,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Main_Mov : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Instabilities_within_Bedrock_PLG_Main_Mov;
-    STRUCTURE Ref_Ginb302
+    STRUCTURE Ref_11502
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Instabilities_within_Bedrock_PLG_Main_Mov;
-    END Ref_Ginb302;
+    END Ref_11502;
 
     CLASS Glacial_Structures_PT_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -347,10 +347,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Glacial_Structures_PT_Kind;
-    STRUCTURE Ref_Ggla101
+    STRUCTURE Ref_11201
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Glacial_Structures_PT_Kind;
-    END Ref_Ggla101;
+    END Ref_11201;
 
     CLASS Glacial_and_Periglacial_Structures_L_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -358,10 +358,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Glacial_and_Periglacial_Structures_L_Kind;
-    STRUCTURE Ref_Ggla201
+    STRUCTURE Ref_11301
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Glacial_and_Periglacial_Structures_L_Kind;
-    END Ref_Ggla201;
+    END Ref_11301;
 
     CLASS Glacial_and_Periglacial_Structures_L_Morai_Mo
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -370,10 +370,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Morai_Mo : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Glacial_and_Periglacial_Structures_L_Morai_Mo;
-    STRUCTURE Ref_Ggla202
+    STRUCTURE Ref_11302
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Glacial_and_Periglacial_Structures_L_Morai_Mo;
-    END Ref_Ggla202;
+    END Ref_11302;
 
     CLASS Glacial_and_Periglacial_Structures_L_Glac_Typ
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -382,10 +382,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Glac_Typ : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Glacial_and_Periglacial_Structures_L_Glac_Typ;
-    STRUCTURE Ref_Ggla203
+    STRUCTURE Ref_11303
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Glacial_and_Periglacial_Structures_L_Glac_Typ;
-    END Ref_Ggla203;
+    END Ref_11303;
 
     CLASS Glacial_and_Periglacial_Structures_L_Ice_M_P
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -393,10 +393,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Ice_M_P : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Glacial_and_Periglacial_Structures_L_Ice_M_P;
-    STRUCTURE Ref_Ggla204
+    STRUCTURE Ref_11304
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Glacial_and_Periglacial_Structures_L_Ice_M_P;
-    END Ref_Ggla204;
+    END Ref_11304;
 
     CLASS Glacial_and_Periglacial_Structures_L_Quat_Str
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -404,10 +404,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Quat_Str : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Glacial_and_Periglacial_Structures_L_Quat_Str;
-    STRUCTURE Ref_Ggla205
+    STRUCTURE Ref_11305
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Glacial_and_Periglacial_Structures_L_Quat_Str;
-    END Ref_Ggla205;
+    END Ref_11305;
 
     CLASS Glacial_Structures_PLG_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -415,10 +415,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Glacial_Structures_PLG_Kind;
-    STRUCTURE Ref_Ggla301
+    STRUCTURE Ref_11401
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Glacial_Structures_PLG_Kind;
-    END Ref_Ggla301;
+    END Ref_11401;
 
     CLASS Erosional_Structures_PT_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -426,10 +426,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Erosional_Structures_PT_Kind;
-    STRUCTURE Ref_Gero101
+    STRUCTURE Ref_11001
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Erosional_Structures_PT_Kind;
-    END Ref_Gero101;
+    END Ref_11001;
 
     CLASS Erosional_Structures_L_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -437,10 +437,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Erosional_Structures_L_Kind;
-    STRUCTURE Ref_Gero201
+    STRUCTURE Ref_11101
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Erosional_Structures_L_Kind;
-    END Ref_Gero201;
+    END Ref_11101;
 
     CLASS Karstic_Structures_PT_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -448,10 +448,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Karstic_Structures_PT_Kind;
-    STRUCTURE Ref_Gkar101
+    STRUCTURE Ref_11901
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Karstic_Structures_PT_Kind;
-    END Ref_Gkar101;
+    END Ref_11901;
 
     CLASS Karstic_Structures_PLG_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -459,10 +459,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Karstic_Structures_PLG_Kind;
-    STRUCTURE Ref_Gkar301
+    STRUCTURE Ref_12001
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Karstic_Structures_PLG_Kind;
-    END Ref_Gkar301;
+    END Ref_12001;
 
     CLASS Alluvial_and_Lacustrine_Structures_L_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -470,10 +470,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Alluvial_and_Lacustrine_Structures_L_Kind;
-    STRUCTURE Ref_Gall201
+    STRUCTURE Ref_10901
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Alluvial_and_Lacustrine_Structures_L_Kind;
-    END Ref_Gall201;
+    END Ref_10901;
 
     CLASS Alluvial_and_Lacustrine_Structures_L_Age
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -481,10 +481,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Age : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Alluvial_and_Lacustrine_Structures_L_Age;
-    STRUCTURE Ref_Gall202
+    STRUCTURE Ref_10902
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Alluvial_and_Lacustrine_Structures_L_Age;
-    END Ref_Gall202;
+    END Ref_10902;
 
     CLASS Deformation_Structures_PT_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -492,10 +492,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Deformation_Structures_PT_Kind;
-    STRUCTURE Ref_Tdef101
+    STRUCTURE Ref_14601
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Deformation_Structures_PT_Kind;
-    END Ref_Tdef101;
+    END Ref_14601;
 
     CLASS Deformation_Structures_PT_Fold_Typ
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -503,10 +503,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Fold_Typ : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Deformation_Structures_PT_Fold_Typ;
-    STRUCTURE Ref_Tdef104
+    STRUCTURE Ref_14604
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Deformation_Structures_PT_Fold_Typ;
-    END Ref_Tdef104;
+    END Ref_14604;
 
     CLASS Deformation_Structures_PT_Fold_For
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -514,10 +514,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Fold_For : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Deformation_Structures_PT_Fold_For;
-    STRUCTURE Ref_Tdef105
+    STRUCTURE Ref_14605
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Deformation_Structures_PT_Fold_For;
-    END Ref_Tdef105;
+    END Ref_14605;
 
     CLASS Deformation_Structures_L_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -525,10 +525,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Deformation_Structures_L_Kind;
-    STRUCTURE Ref_Tdef201
+    STRUCTURE Ref_14701
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Deformation_Structures_L_Kind;
-    END Ref_Tdef201;
+    END Ref_14701;
 
     CLASS Deformation_Structures_PLG_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -536,10 +536,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Deformation_Structures_PLG_Kind;
-    STRUCTURE Ref_Tdef301
+    STRUCTURE Ref_14801
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Deformation_Structures_PLG_Kind;
-    END Ref_Tdef301;
+    END Ref_14801;
 
     CLASS Deformation_Structures_PLG_Type
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -547,10 +547,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Type : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Deformation_Structures_PLG_Type;
-    STRUCTURE Ref_Tdef302
+    STRUCTURE Ref_14802
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Deformation_Structures_PLG_Type;
-    END Ref_Tdef302;
+    END Ref_14802;
 
     CLASS Deformation_Structures_PLG_Gen_Rela
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -558,10 +558,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Gen_Rela : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Deformation_Structures_PLG_Gen_Rela;
-    STRUCTURE Ref_Tdef303
+    STRUCTURE Ref_14803
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Deformation_Structures_PLG_Gen_Rela;
-    END Ref_Tdef303;
+    END Ref_14803;
 
     CLASS Tectonic_Boundaries_L_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -569,10 +569,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Tectonic_Boundaries_L_Kind;
-    STRUCTURE Ref_Ttec201
+    STRUCTURE Ref_14901
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Tectonic_Boundaries_L_Kind;
-    END Ref_Ttec201;
+    END Ref_14901;
 
     CLASS Tectonic_Boundaries_L_Fault_Mo
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -580,10 +580,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Fault_Mo : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Tectonic_Boundaries_L_Fault_Mo;
-    STRUCTURE Ref_Ttec202
+    STRUCTURE Ref_14902
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Tectonic_Boundaries_L_Fault_Mo;
-    END Ref_Ttec202;
+    END Ref_14902;
 
     CLASS Tectonic_Boundaries_L_Verti_Mo
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -591,10 +591,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Verti_Mo : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Tectonic_Boundaries_L_Verti_Mo;
-    STRUCTURE Ref_Ttec203
+    STRUCTURE Ref_14903
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Tectonic_Boundaries_L_Verti_Mo;
-    END Ref_Ttec203;
+    END Ref_14903;
 
     CLASS Tectonic_Boundaries_L_Horiz_Mo
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -602,10 +602,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Horiz_Mo : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Tectonic_Boundaries_L_Horiz_Mo;
-    STRUCTURE Ref_Ttec204
+    STRUCTURE Ref_14904
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Tectonic_Boundaries_L_Horiz_Mo;
-    END Ref_Ttec204;
+    END Ref_14904;
 
     CLASS Tectonic_Boundaries_L_Status
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -613,10 +613,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Status : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Tectonic_Boundaries_L_Status;
-    STRUCTURE Ref_Ttec206
+    STRUCTURE Ref_14906
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Tectonic_Boundaries_L_Status;
-    END Ref_Ttec206;
+    END Ref_14906;
 
     CLASS Tectonic_Boundaries_L_Activity
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -624,10 +624,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Activity : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Tectonic_Boundaries_L_Activity;
-    STRUCTURE Ref_Ttec207
+    STRUCTURE Ref_14907
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Tectonic_Boundaries_L_Activity;
-    END Ref_Ttec207;
+    END Ref_14907;
 
     CLASS Tectonic_Boundaries_L_Meta_Sta
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -635,10 +635,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Meta_Sta : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Tectonic_Boundaries_L_Meta_Sta;
-    STRUCTURE Ref_Ttec208
+    STRUCTURE Ref_14908
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Tectonic_Boundaries_L_Meta_Sta;
-    END Ref_Ttec208;
+    END Ref_14908;
 
     CLASS Folds_PT_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -646,10 +646,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Folds_PT_Kind;
-    STRUCTURE Ref_Mfol101
+    STRUCTURE Ref_13601
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Folds_PT_Kind;
-    END Ref_Mfol101;
+    END Ref_13601;
 
      CLASS Folds_PT_Fold_Typ
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -657,10 +657,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Fold_Typ : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Folds_PT_Fold_Typ;
-    STRUCTURE Ref_Mfol102
+    STRUCTURE Ref_13602
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Folds_PT_Fold_Typ;
-    END Ref_Mfol102;
+    END Ref_13602;
 
     CLASS Folds_PT_Fold_For
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -668,10 +668,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Fold_For : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Folds_PT_Fold_For;
-    STRUCTURE Ref_Mfol103
+    STRUCTURE Ref_13603
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Folds_PT_Fold_For;
-    END Ref_Mfol103;
+    END Ref_13603;
 
     CLASS Folds_PT_Phase
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -679,10 +679,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Phase : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Folds_PT_Phase;
-    STRUCTURE Ref_Mfol104
+    STRUCTURE Ref_13604
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Folds_PT_Phase;
-    END Ref_Mfol104;
+    END Ref_13604;
 
     CLASS Lineation_PT_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -690,10 +690,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Lineation_PT_Kind;
-    STRUCTURE Ref_Mlin101
+    STRUCTURE Ref_13701
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Lineation_PT_Kind;
-    END Ref_Mlin101;
+    END Ref_13701;
 
     CLASS Planar_Structures_PT_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -701,10 +701,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Planar_Structures_PT_Kind;
-    STRUCTURE Ref_Mpla101
+    STRUCTURE Ref_13801
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Planar_Structures_PT_Kind;
-    END Ref_Mpla101;
+    END Ref_13801;
 
     CLASS Planar_Structures_PT_Polarity
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -712,10 +712,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Polarity : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Planar_Structures_PT_Polarity;
-    STRUCTURE Ref_Mpla102
+    STRUCTURE Ref_13802
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Planar_Structures_PT_Polarity;
-    END Ref_Mpla102;
+    END Ref_13802;
 
     CLASS Planar_Structures_PT_Phase
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -723,10 +723,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Phase : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Planar_Structures_PT_Phase;
-    STRUCTURE Ref_Mpla103
+    STRUCTURE Ref_13803
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Planar_Structures_PT_Phase;
-    END Ref_Mpla103;
+    END Ref_13803;
 
     CLASS Anomalies_PT_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -734,10 +734,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Anomalies_PT_Kind;
-    STRUCTURE Ref_Lano101
+    STRUCTURE Ref_12801
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Anomalies_PT_Kind;
-    END Ref_Lano101;
+    END Ref_12801;
 
     CLASS Anomalies_PT_Type
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -745,10 +745,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Type : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Anomalies_PT_Type;
-    STRUCTURE Ref_Lano102
+    STRUCTURE Ref_12802
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Anomalies_PT_Type;
-    END Ref_Lano102;
+    END Ref_12802;
 
     CLASS Fossils_PT_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -756,10 +756,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Fossils_PT_Kind;
-    STRUCTURE Ref_Lfos101
+    STRUCTURE Ref_12901
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Fossils_PT_Kind;
-    END Ref_Lfos101;
+    END Ref_12901;
 
     CLASS Fossils_PT_Division
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -767,10 +767,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Division : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Fossils_PT_Division;
-    STRUCTURE Ref_Lfos102
+    STRUCTURE Ref_12902
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Fossils_PT_Division;
-    END Ref_Lfos102;
+    END Ref_12902;
 
     CLASS Fossils_PT_System
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -778,10 +778,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       System : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Fossils_PT_System;
-    STRUCTURE Ref_Lfos103
+    STRUCTURE Ref_12903
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Fossils_PT_System;
-    END Ref_Lfos103;
+    END Ref_12903;
 
     CLASS Fossils_PT_Dat_Meth
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -789,10 +789,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Dat_Meth : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Fossils_PT_Dat_Meth;
-    STRUCTURE Ref_Lfos104
+    STRUCTURE Ref_12904
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Fossils_PT_Dat_Meth;
-    END Ref_Lfos104;
+    END Ref_12904;
 
     CLASS Fossils_PT_Status
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -800,10 +800,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Status : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Fossils_PT_Status;
-    STRUCTURE Ref_Lfos105
+    STRUCTURE Ref_12905
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Fossils_PT_Status;
-    END Ref_Lfos105;
+    END Ref_12905;
 
     CLASS Indication_of_Resources_PT_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -811,10 +811,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Indication_of_Resources_PT_Kind;
-    STRUCTURE Ref_Lres101
+    STRUCTURE Ref_13201
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Indication_of_Resources_PT_Kind;
-    END Ref_Lres101;
+    END Ref_13201;
 
     CLASS Indication_of_Resources_PT_Status
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -822,10 +822,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Status : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Indication_of_Resources_PT_Status;
-    STRUCTURE Ref_Lres102
+    STRUCTURE Ref_13202
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Indication_of_Resources_PT_Status;
-    END Ref_Lres102;
+    END Ref_13202;
 
     CLASS Indication_of_Resources_PT_Material
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -833,10 +833,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Material : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Indication_of_Resources_PT_Material;
-    STRUCTURE Ref_Lres103
+    STRUCTURE Ref_13203
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Indication_of_Resources_PT_Material;
-    END Ref_Lres103;
+    END Ref_13203;
 
     CLASS Mineralised_Zone_L_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -844,10 +844,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Mineralised_Zone_L_Kind;
-    STRUCTURE Ref_Lres201
+    STRUCTURE Ref_13301
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Mineralised_Zone_L_Kind;
-    END Ref_Lres201;
+    END Ref_13301;
 
     CLASS Sedimentary_Structures_PT_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -855,10 +855,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Sedimentary_Structures_PT_Kind;
-    STRUCTURE Ref_Lsed101
+    STRUCTURE Ref_13401
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Sedimentary_Structures_PT_Kind;
-    END Ref_Lsed101;
+    END Ref_13401;
 
     CLASS Type_Localities_PT_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -866,10 +866,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Type_Localities_PT_Kind;
-    STRUCTURE Ref_Ltyp101
+    STRUCTURE Ref_13501
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Type_Localities_PT_Kind;
-    END Ref_Ltyp101;
+    END Ref_13501;
 
     CLASS Type_Localities_PT_Strati
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -877,10 +877,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Strati : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Type_Localities_PT_Strati;
-    STRUCTURE Ref_Ltyp102
+    STRUCTURE Ref_13502
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Type_Localities_PT_Strati;
-    END Ref_Ltyp102;
+    END Ref_13502;
 
 	CLASS Prominent_Lithological_Features_L_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -888,10 +888,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Cong_Spe : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Prominent_Lithological_Features_L_Kind;
-    STRUCTURE Ref_Lpro201
+    STRUCTURE Ref_13101
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Prominent_Lithological_Features_L_Kind;
-    END Ref_Lpro201;
+    END Ref_13101;
 
     CLASS Prominent_Lithological_Features_L_Cong_Spe
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -899,10 +899,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Cong_Spe : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Prominent_Lithological_Features_L_Cong_Spe;
-    STRUCTURE Ref_Lpro202
+    STRUCTURE Ref_13102
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Prominent_Lithological_Features_L_Cong_Spe;
-    END Ref_Lpro202;
+    END Ref_13102;
 
     CLASS Prominent_Lithological_Features_L_Name_Horiz
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -910,10 +910,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Name_Horiz : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Prominent_Lithological_Features_L_Name_Horiz;
-    STRUCTURE Ref_Lpro203
+    STRUCTURE Ref_13103
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Prominent_Lithological_Features_L_Name_Horiz;
-    END Ref_Lpro203;
+    END Ref_13103;
 
     CLASS Miscellaneous_PT_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -921,10 +921,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Name_Horiz : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Miscellaneous_PT_Kind;
-    STRUCTURE Ref_Lmis201
+    STRUCTURE Ref_15501
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Miscellaneous_PT_Kind;
-    END Ref_Lmis201;
+    END Ref_15501;
 
     CLASS Geological_Outlines_L_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -932,10 +932,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Geological_Outlines_L_Kind;
-    STRUCTURE Ref_Lgeo201
+    STRUCTURE Ref_13001
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Geological_Outlines_L_Kind;
-    END Ref_Lgeo201;
+    END Ref_13001;
 
     CLASS Geological_Outlines_L_Status
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -943,10 +943,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Status : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Geological_Outlines_L_Status;
-    STRUCTURE Ref_Lgeo202
+    STRUCTURE Ref_13002
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Geological_Outlines_L_Status;
-    END Ref_Lgeo202;
+    END Ref_13002;
 
     CLASS Slope_Bedrock_PT_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -954,10 +954,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Slope_Bedrock_PT_Kind;
-    STRUCTURE Ref_Pslo101
+    STRUCTURE Ref_14201
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Slope_Bedrock_PT_Kind;
-    END Ref_Pslo101;
+    END Ref_14201;
 
     CLASS Slope_Bedrock_PT_Type
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -965,10 +965,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Type : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Slope_Bedrock_PT_Type;
-    STRUCTURE Ref_Pslo102
+    STRUCTURE Ref_14202
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Slope_Bedrock_PT_Type;
-    END Ref_Pslo102;
+    END Ref_14202;
 
     CLASS Contour_Lines_Bedrock_L_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -976,10 +976,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Contour_Lines_Bedrock_L_Kind;
-    STRUCTURE Ref_Pcob201
+    STRUCTURE Ref_13901
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Contour_Lines_Bedrock_L_Kind;
-    END Ref_Pcob201;
+    END Ref_13901;
 
     CLASS Contour_Lines_Bedrock_L_Type
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -987,10 +987,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Type : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Contour_Lines_Bedrock_L_Type;
-    STRUCTURE Ref_Pcob202
+    STRUCTURE Ref_13902
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Contour_Lines_Bedrock_L_Type;
-    END Ref_Pcob202;
+    END Ref_13902;
 
     CLASS Modelled_Water_Table_PT_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -998,10 +998,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Modelled_Water_Table_PT_Kind;
-    STRUCTURE Ref_Pmod101
+    STRUCTURE Ref_14101
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Modelled_Water_Table_PT_Kind;
-    END Ref_Pmod101;
+    END Ref_14101;
 
     CLASS Contour_Lines_Hydro_L_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1009,10 +1009,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Contour_Lines_Hydro_L_Kind;
-    STRUCTURE Ref_Pcoh201
+    STRUCTURE Ref_14001
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Contour_Lines_Hydro_L_Kind;
-    END Ref_Pcoh201;
+    END Ref_14001;
 
     CLASS Contour_Lines_Hydro_L_Confine
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1020,10 +1020,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Confine : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Contour_Lines_Hydro_L_Confine;
-    STRUCTURE Ref_Pcoh202
+    STRUCTURE Ref_14002
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Contour_Lines_Hydro_L_Confine;
-    END Ref_Pcoh202;
+    END Ref_14002;
 
     CLASS Contour_Lines_Hydro_L_Wa_Table
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1031,10 +1031,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Wa_Table : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Contour_Lines_Hydro_L_Wa_Table;
-    STRUCTURE Ref_Pcoh204
+    STRUCTURE Ref_14004
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Contour_Lines_Hydro_L_Wa_Table;
-    END Ref_Pcoh204;
+    END Ref_14004;
 
     CLASS Archaeology_PT_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1042,10 +1042,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Archaeology_PT_Kind;
-    STRUCTURE Ref_Aarc101
+    STRUCTURE Ref_10101
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Archaeology_PT_Kind;
-    END Ref_Aarc101;
+    END Ref_10101;
 
     CLASS Archaeology_PT_Epoch
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1053,10 +1053,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Epoch : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Archaeology_PT_Epoch;
-    STRUCTURE Ref_Aarc102
+    STRUCTURE Ref_10102
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Archaeology_PT_Epoch;
-    END Ref_Aarc102;
+    END Ref_10102;
 
     CLASS Archaeology_PT_Period
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1064,10 +1064,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Period : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Archaeology_PT_Period;
-    STRUCTURE Ref_Aarc103
+    STRUCTURE Ref_10103
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Archaeology_PT_Period;
-    END Ref_Aarc103;
+    END Ref_10103;
 
     CLASS Archaeology_PT_Age
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1075,10 +1075,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Age : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Archaeology_PT_Age;
-    STRUCTURE Ref_Aarc104
+    STRUCTURE Ref_10104
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Archaeology_PT_Age;
-    END Ref_Aarc104;
+    END Ref_10104;
 
     CLASS Archaeology_PT_Type
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1086,10 +1086,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Type : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Archaeology_PT_Type;
-    STRUCTURE Ref_Aarc105
+    STRUCTURE Ref_10105
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Archaeology_PT_Type;
-    END Ref_Aarc105;
+    END Ref_10105;
 
     CLASS Archaeology_L_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1097,10 +1097,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Archaeology_L_Kind;
-    STRUCTURE Ref_Aarc201
+    STRUCTURE Ref_10201
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Archaeology_L_Kind;
-    END Ref_Aarc201;
+    END Ref_10201;
 
     CLASS Archaeology_L_Epoch
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1108,10 +1108,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Epoch : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Archaeology_L_Epoch;
-    STRUCTURE Ref_Aarc202
+    STRUCTURE Ref_10202
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Archaeology_L_Epoch;
-    END Ref_Aarc202;
+    END Ref_10202;
 
     CLASS Archaeology_L_Period
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1119,10 +1119,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Period : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Archaeology_L_Period;
-    STRUCTURE Ref_Aarc203
+    STRUCTURE Ref_10203
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Archaeology_L_Period;
-    END Ref_Aarc203;
+    END Ref_10203;
 
     CLASS Archaeology_L_Age
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1130,10 +1130,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Age : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Archaeology_L_Age;
-    STRUCTURE Ref_Aarc204
+    STRUCTURE Ref_10204
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Archaeology_L_Age;
-    END Ref_Aarc204;
+    END Ref_10204;
 
     CLASS Archaeology_PLG_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1141,10 +1141,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Archaeology_PLG_Kind;
-    STRUCTURE Ref_Aarc301
+    STRUCTURE Ref_10301
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Archaeology_PLG_Kind;
-    END Ref_Aarc301;
+    END Ref_10301;
 
     CLASS Archaeology_PLG_Epoch
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1152,10 +1152,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Epoch : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Archaeology_PLG_Epoch;
-    STRUCTURE Ref_Aarc302
+    STRUCTURE Ref_10302
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Archaeology_PLG_Epoch;
-    END Ref_Aarc302;
+    END Ref_10302;
 
     CLASS Archaeology_PLG_Period
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1163,10 +1163,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Period : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Archaeology_PLG_Period;
-    STRUCTURE Ref_Aarc303
+    STRUCTURE Ref_10303
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Archaeology_PLG_Period;
-    END Ref_Aarc303;
+    END Ref_10303;
 
     CLASS Archaeology_PLG_Age
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1174,10 +1174,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Age : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Archaeology_PLG_Age;
-    STRUCTURE Ref_Aarc304
+    STRUCTURE Ref_10304
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Archaeology_PLG_Age;
-    END Ref_Aarc304;
+    END Ref_10304;
 
     CLASS Exploitation_Geomaterials_PT_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1185,10 +1185,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Exploitation_Geomaterials_PT_Kind;
-    STRUCTURE Ref_Aexp101
+    STRUCTURE Ref_10601
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Exploitation_Geomaterials_PT_Kind;
-    END Ref_Aexp101;
+    END Ref_10601;
 
     CLASS Exploitation_Geomaterials_PT_Status
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1196,10 +1196,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Status : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Exploitation_Geomaterials_PT_Status;
-    STRUCTURE Ref_Aexp103
+    STRUCTURE Ref_10603
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Exploitation_Geomaterials_PT_Status;
-    END Ref_Aexp103;
+    END Ref_10603;
 
     CLASS Exploitation_Geomaterials_PT_Targ_Mat
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1207,10 +1207,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Targ_Mat : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Exploitation_Geomaterials_PT_Targ_Mat;
-    STRUCTURE Ref_Aexp105
+    STRUCTURE Ref_10605
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Exploitation_Geomaterials_PT_Targ_Mat;
-    END Ref_Aexp105;
+    END Ref_10605;
 
     CLASS Exploitation_Geomaterials_L_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1218,10 +1218,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Exploitation_Geomaterials_L_Kind;
-    STRUCTURE Ref_Aexp201
+    STRUCTURE Ref_10701
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Exploitation_Geomaterials_L_Kind;
-    END Ref_Aexp201;
+    END Ref_10701;
 
     CLASS Exploitation_Geomaterials_L_Status
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1229,10 +1229,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Status : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Exploitation_Geomaterials_L_Status;
-    STRUCTURE Ref_Aexp202
+    STRUCTURE Ref_10702
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Exploitation_Geomaterials_L_Status;
-    END Ref_Aexp202;
+    END Ref_10702;
 
     CLASS Exploitation_Geomaterials_PLG_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1240,10 +1240,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Exploitation_Geomaterials_PLG_Kind;
-    STRUCTURE Ref_Aexp301
+    STRUCTURE Ref_10801
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Exploitation_Geomaterials_PLG_Kind;
-    END Ref_Aexp301;
+    END Ref_10801;
 
     CLASS Exploitation_Geomaterials_PLG_Status
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1251,10 +1251,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Status : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Exploitation_Geomaterials_PLG_Status;
-    STRUCTURE Ref_Aexp302
+    STRUCTURE Ref_10802
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Exploitation_Geomaterials_PLG_Status;
-    END Ref_Aexp302;
+    END Ref_10802;
 
     CLASS Exploitation_Geomaterials_PLG_Targ_Mat
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1262,10 +1262,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Targ_Mat : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Exploitation_Geomaterials_PLG_Targ_Mat;
-    STRUCTURE Ref_Aexp304
+    STRUCTURE Ref_10804
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Exploitation_Geomaterials_PLG_Targ_Mat;
-    END Ref_Aexp304;
+    END Ref_10804;
 
     CLASS Boreholes_PT_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1273,10 +1273,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Boreholes_PT_Kind;
-    STRUCTURE Ref_Abor101
+    STRUCTURE Ref_10501
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Boreholes_PT_Kind;
-    END Ref_Abor101;
+    END Ref_10501;
 
     CLASS Boreholes_PT_Drill_Mo
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1284,10 +1284,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Drill_Mo : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Boreholes_PT_Drill_Mo;
-    STRUCTURE Ref_Abor102
+    STRUCTURE Ref_10502
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Boreholes_PT_Drill_Mo;
-    END Ref_Abor102;
+    END Ref_10502;
 
     CLASS Boreholes_PT_Main_Tar
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1295,10 +1295,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Main_Tar : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Boreholes_PT_Main_Tar;
-    STRUCTURE Ref_Abor105
+    STRUCTURE Ref_10505
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Boreholes_PT_Main_Tar;
-    END Ref_Abor105;
+    END Ref_10505;
 
     CLASS Boreholes_PT_Targ_Mat
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1306,10 +1306,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Targ_Mat : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Boreholes_PT_Targ_Mat;
-    STRUCTURE Ref_Abor106
+    STRUCTURE Ref_10506
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Boreholes_PT_Targ_Mat;
-    END Ref_Abor106;
+    END Ref_10506;
 
     CLASS Artificial_Surface_Modifications_PLG_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1317,10 +1317,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Artificial_Surface_Modifications_PLG_Kind;
-    STRUCTURE Ref_Aart301
+    STRUCTURE Ref_10401
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Artificial_Surface_Modifications_PLG_Kind;
-    END Ref_Aart301;
+    END Ref_10401;
 
     CLASS Construction_PT_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1328,10 +1328,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Construction_PT_Kind;
-    STRUCTURE Ref_Hcon101
+    STRUCTURE Ref_12101
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Construction_PT_Kind;
-    END Ref_Hcon101;
+    END Ref_12101;
 
     CLASS Construction_PT_Status
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1339,10 +1339,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Status : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Construction_PT_Status;
-    STRUCTURE Ref_Hcon102
+    STRUCTURE Ref_12102
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Construction_PT_Status;
-    END Ref_Hcon102;
+    END Ref_12102;
 
     CLASS Construction_PT_Epoch
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1350,10 +1350,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Epoch : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Construction_PT_Epoch;
-    STRUCTURE Ref_Hcon103
+    STRUCTURE Ref_12103
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Construction_PT_Epoch;
-    END Ref_Hcon103;
+    END Ref_12103;
 
     CLASS Construction_L_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1361,10 +1361,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Construction_L_Kind;
-    STRUCTURE Ref_Hcon201
+    STRUCTURE Ref_12201
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Construction_L_Kind;
-    END Ref_Hcon201;
+    END Ref_12201;
 
     CLASS Construction_L_Combi
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1372,10 +1372,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Combi : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Construction_L_Combi;
-    STRUCTURE Ref_Hcon202
+    STRUCTURE Ref_12202
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Construction_L_Combi;
-    END Ref_Hcon202;
+    END Ref_12202;
 
     CLASS Palaeohydrology_L_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1383,10 +1383,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Palaeohydrology_L_Kind;
-    STRUCTURE Ref_Hpal201
+    STRUCTURE Ref_12301
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Palaeohydrology_L_Kind;
-    END Ref_Hpal201;
+    END Ref_12301;
 
     CLASS Palaeohydrology_L_Rel_Age
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1394,10 +1394,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Rel_Age : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Palaeohydrology_L_Rel_Age;
-    STRUCTURE Ref_Hpal202
+    STRUCTURE Ref_12302
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Palaeohydrology_L_Rel_Age;
-    END Ref_Hpal202;
+    END Ref_12302;
 
     CLASS Subsurface_Water_L_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1405,10 +1405,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Subsurface_Water_L_Kind;
-    STRUCTURE Ref_Hsub201
+    STRUCTURE Ref_12401
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Subsurface_Water_L_Kind;
-    END Ref_Hsub201;
+    END Ref_12401;
 
     CLASS Subsurface_Water_L_Combi
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1416,10 +1416,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Combi : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Subsurface_Water_L_Combi;
-    STRUCTURE Ref_Hsub202
+    STRUCTURE Ref_12402
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Subsurface_Water_L_Combi;
-    END Ref_Hsub202;
+    END Ref_12402;
 
     CLASS Surface_Water_PT_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1427,10 +1427,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Surface_Water_PT_Kind;
-    STRUCTURE Ref_Hsur101
+    STRUCTURE Ref_12501
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Surface_Water_PT_Kind;
-    END Ref_Hsur101;
+    END Ref_12501;
 
     CLASS Surface_Water_PT_Status
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1438,10 +1438,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Status : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Surface_Water_PT_Status;
-    STRUCTURE Ref_Hsur102
+    STRUCTURE Ref_12502
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Surface_Water_PT_Status;
-    END Ref_Hsur102;
+    END Ref_12502;
 
     CLASS Surface_Water_PT_Flow_Con
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1449,10 +1449,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Flow_Con : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Surface_Water_PT_Flow_Con;
-    STRUCTURE Ref_Hsur103
+    STRUCTURE Ref_12503
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Surface_Water_PT_Flow_Con;
-    END Ref_Hsur103;
+    END Ref_12503;
 
     CLASS Surface_Water_PT_Type
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1460,10 +1460,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Type : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Surface_Water_PT_Type;
-    STRUCTURE Ref_Hsur104
+    STRUCTURE Ref_12504
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Surface_Water_PT_Type;
-    END Ref_Hsur104;
+    END Ref_12504;
 
     CLASS Surface_Water_PT_Dis_Loca
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1471,10 +1471,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Dis_Loca : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Surface_Water_PT_Dis_Loca;
-    STRUCTURE Ref_Hsur105
+    STRUCTURE Ref_12505
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Surface_Water_PT_Dis_Loca;
-    END Ref_Hsur105;
+    END Ref_12505;
 
     CLASS Surface_Water_PT_Combi
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1482,10 +1482,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Combi : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Surface_Water_PT_Combi;
-    STRUCTURE Ref_Hsur106
+    STRUCTURE Ref_12506
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Surface_Water_PT_Combi;
-    END Ref_Hsur106;
+    END Ref_12506;
 
     CLASS Surface_Water_L_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1493,10 +1493,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Surface_Water_L_Kind;
-    STRUCTURE Ref_Hsur201
+    STRUCTURE Ref_12601
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Surface_Water_L_Kind;
-    END Ref_Hsur201;
+    END Ref_12601;
 
     CLASS Surface_Water_PLG_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1504,10 +1504,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Surface_Water_PLG_Kind;
-    STRUCTURE Ref_Hsur301
+    STRUCTURE Ref_12701
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Surface_Water_PLG_Kind;
-    END Ref_Hsur301;
+    END Ref_12701;
 	
 	CLASS Mapsheet_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
@@ -1515,10 +1515,10 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
     END Mapsheet_Kind;
-    STRUCTURE Ref_Mdat101
+    STRUCTURE Ref_15410
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Mapsheet_Kind;
-    END Ref_Mdat101;
+    END Ref_15410;
 
   END Geology_Catalogues;
 
@@ -1527,15 +1527,15 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
   TOPIC Geology_CatalogueTrees
   EXTENDS CatalogueObjectTrees_V1.Catalogues =
 
-    CLASS Lithostratigraphic_Units_LitStrat 
+    CLASS Lithostratigraphic_Units_Litstrat 
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
       GeolCode : MANDATORY TEXT*10;
       LitStrat : MANDATORY LocalisationCH_V1.MultilingualText;
     UNIQUE GeolCode;
-    END Lithostratigraphic_Units_LitStrat;
+    END Lithostratigraphic_Units_Litstrat;
     STRUCTURE Ref_Vlit500
     EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
-      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Lithostratigraphic_Units_LitStrat;
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Lithostratigraphic_Units_Litstrat;
     END Ref_Vlit500;
 
     CLASS Lithostratigraphic_Units_Litho 
