@@ -339,9 +339,9 @@ Cependant, cela rend possible les mises à jour périodiques nécessaires. Le Mo
       Geometry : MANDATORY GeometryCHLV95_V1.Coord2;
       /**Object type*/
       Kind : MANDATORY GeologyModelLookUp_V3_0.Geology_Catalogues.Ref_14601;
-      /**Azimuth: Direction (azimuth) of the respective point object type measured clockwise in degrees (0° - 359°)*/
+      /**Azimuth: Dip Direction of the respective point object type measured clockwise in degrees (0° - 359°)*/
       Azimuth : 0 .. 359 CIRCULAR [Units.Angle_Degree];
-      /**Plunge: Inclination of the respective point object type. Value measured in degrees from the horizontal (0°) up to the vertical position (90°)*/
+      /**Dip: Inclination of the respective point object type. Value measured in degrees from the horizontal (0°) up to the vertical position (90°)*/
       Dip : -999 .. 90;
       /**Fold Type: Fold type*/
       Fold_Typ : GeologyModelLookUp_V3_0.Geology_Catalogues.Ref_14604;
@@ -423,7 +423,7 @@ Cependant, cela rend possible les mises à jour périodiques nécessaires. Le Mo
       Phase : GeologyModelLookUp_V3_0.Geology_Catalogues.Ref_13604;
       /**Phase Reference: Reference for the indication of the deformation phase*/
       Phase_Ref : TEXT*254;
-      /**Azimuth: Azimuth of the respective point object type (e.g. crest line, fold axis). Value measured clockwise in degree (0°-359°)*/
+      /**Azimuth: Dip direction of the respective point object type (e.g. crest line, fold axis). Value measured clockwise in degree (0°-359°)*/
       Azimuth : MANDATORY 0 .. 359 CIRCULAR [Units.Angle_Degree];
       /**Dip: Inclination of the respective point object type. Value measured in degrees from the horizontal (0°) up to the vertical position (90°)*/
       Dip : -999 .. 90;
@@ -436,7 +436,7 @@ Cependant, cela rend possible les mises à jour périodiques nécessaires. Le Mo
       Geometry : MANDATORY GeometryCHLV95_V1.Coord2;
       /**Object type*/
       Kind : MANDATORY GeologyModelLookUp_V3_0.Geology_Catalogues.Ref_13701;
-      /**Azimuth: Azimuth of the respective point object type. Value measured clockwise in degree (0°-359°)*/
+      /**Azimuth: Dip direction of the respective point object type. Value measured clockwise in degree (0°-359°)*/
       Azimuth : MANDATORY 0 .. 359 CIRCULAR [Units.Angle_Degree];
       /**Dip: Inclination of the respective point object type. Value measured in degrees from the horizontal (0°) up to the vertical position (90°)*/
       Dip : -999 .. 90;
@@ -457,7 +457,7 @@ Cependant, cela rend possible les mises à jour périodiques nécessaires. Le Mo
       Phase_Ref : TEXT*254;
       /**Observed Dip Slope: Dip slope observed (yes/no)?*/
       Ob_Dip_Slo : BOOLEAN;
-      /**Azimuth: Azimuth of the respective point object type (e.g. orientation of the bedding or fracture). Value measured clockwise in degree (0°-359°)*/
+      /**Azimuth: Dip direction of the respective point object type (e.g. orientation of the bedding or fracture). Value measured clockwise in degree (0°-359°)*/
       Azimuth : MANDATORY 0 .. 359 CIRCULAR [Units.Angle_Degree];
       /**Dip: Inclination of the respective point object type. Value measured in degrees from the horizontal (0°) up to the vertical position (90°)*/
       Dip : MANDATORY 0 .. 90;
@@ -613,7 +613,7 @@ Cependant, cela rend possible les mises à jour périodiques nécessaires. Le Mo
       Kind : MANDATORY GeologyModelLookUp_V3_0.Geology_Catalogues.Ref_14201;
       /**Type: Reference surface*/
       Type : MANDATORY GeologyModelLookUp_V3_0.Geology_Catalogues.Ref_14202;
-      /**Azimuth: Azimuth of the respective point object type. Value measured clockwise in degree (0°-359°)*/
+      /**Azimuth: Dip direction of the respective point object type. Value measured clockwise in degree (0°-359°)*/
       Azimuth : MANDATORY 0 .. 359 CIRCULAR [Units.Angle_Degree];
       /**Dip: Inclination of the respective point object type. Value measured in degrees from the horizontal (0°) up to the vertical position (90°)*/
       Dip : -999 .. 90;
@@ -793,15 +793,15 @@ Cependant, cela rend possible les mises à jour périodiques nécessaires. Le Mo
       Depth_Fm_B : 0.00 .. 9999.00 [INTERLIS.m];
       /**Depth to Water Table: Depth (m below ground level) of the groundwater table*/
       Depth_WT : 0.00 .. 999.00 [INTERLIS.m];
-      /**Azimuth: Plunge direction of the respective point object type. Value measured clockwise in degree (0°-359°)*/
+      /**Azimuth: Dip direction of the respective point object type. Value measured clockwise in degree (0°-359°)*/
       Azimuth : 0 .. 359 CIRCULAR;
       /**Dip: Inclination of the respective type of spatial point object. Value are measured in degrees from vertical (0°) up to the top into the horizontal position (90°), or up untill the vertical position (180°)*/
-      Dip : 0 .. 180;
+      Dip : -999 .. 180;
       /**Reference Number: Reference number of the object type in an additional document (explanatory notes, etc.)*/
       Ref_Number : 0 .. 9999;
       /**Link: Object number in the INFOGEOL data base*/
       Link : 0 .. 9999999;
-      MANDATORY CONSTRAINT Dip==-999 OR Dip>=-90 AND Dip<=90;
+      MANDATORY CONSTRAINT Dip==-999 OR Dip>=0 AND Dip<=180;
      END Boreholes_PT;
 
     CLASS Artificial_Surface_Modifications_PLG =
@@ -930,7 +930,7 @@ Cependant, cela rend possible les mises à jour périodiques nécessaires. Le Mo
 	  /**Original map title of object type*/
 	  Map_title : MANDATORY TEXT; 
 	  /**Originial map number of object type*/
-	  Map_Nbr : 0 .. 1000; 
+	  Map_Nbr : MANDATORY TEXT*5; 
 	  /**Map scale of object type*/
 	  Map_Scale : MANDATORY TEXT; 
 	  /**Topographic basis information*/
