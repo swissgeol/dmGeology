@@ -86,15 +86,15 @@ Cependant, cela rend possible les mises à jour périodiques nécessaires. Le Mo
     CLASS Lithostratigraphic_Units (ABSTRACT) =
       /**Link to the Structure Metadata*/
       Metadata : MANDATORY Metadata;
-	  /**Lithostratigraphic Unit*/
+      /**Lithostratigraphic Unit*/
       Litstrat : MANDATORY GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Ref_Vlit500; 
-	  /**Lithologic Description*/
+      /**Lithologic Description*/
       Litho : BAG {1..3} OF GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Ref_Vlit400;
       /**Chronostratigraphic Attribution at the Top: Chronostratigraphic attribution of the upper limit of a mapping unit (Top)*/
       Chrono_T : MANDATORY GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Ref_Vchr401;
       /**Chronostratigraphic Attribution at the Bottom: Chronostratigraphic attribution of the lower limit of a mapping unit (Basis)*/
       Chrono_B : MANDATORY GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Ref_Vchr401;
-	  /**Original Description: Original description according to the legend of the corresponding geological map*/
+      /**Original Description: Original description according to the legend of the corresponding geological map*/
       Orig_Descr : MANDATORY MTEXT*500;
     END Lithostratigraphic_Units;
 
@@ -102,11 +102,11 @@ Cependant, cela rend possible les mises à jour périodiques nécessaires. Le Mo
     EXTENDS Lithostratigraphic_Units =
       /**Geometry: Geometry of the corresponding object type*/
       Geometry : MANDATORY SurfaceWithMinimalOverlaps;
-	  /**Object type */
+      /**Kind: Object type*/
       Kind : MANDATORY GeologyModelLookUp_V3_0.Geology_Catalogues.Ref_14517;
       /**Material Type: Designation of the material (lithologic unit)*/
       Mat_Type : BAG {0..3} OF GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Ref_Vlit400;
-	  /**Buried Outcrop: Were the unconsolidated deposits re-buried (yes/no)?*/
+      /**Buried Outcrop: Were the unconsolidated deposits re-buried (yes/no)?*/
       Buried_Out : MANDATORY BOOLEAN;
       /**Composition: Composition of the unconsolidated deposits*/
       Composit : BAG {0..3} OF GeologyModelLookUp_V3_0.Geology_Catalogues.Ref_14508;
@@ -163,13 +163,13 @@ Cependant, cela rend possible les mises à jour périodiques nécessaires. Le Mo
     EXTENDS Lithostratigraphic_Units =
       /**Geometry: Geometry of the corresponding object type*/
       Geometry : MANDATORY SurfaceWithMinimalOverlaps;
-	  /**Object type */
+      /**Object type */
       Kind : MANDATORY GeologyModelLookUp_V3_0.Geology_Catalogues.Ref_14334;
       /**Formation Homogeneity: Lithological setup*/
       Fm_Homog : MANDATORY GeologyModelLookUp_V3_0.Geology_Catalogues.Ref_14302;
       /**Tectonic Attribution: Tectonic affiliation*/
       Tecto : MANDATORY GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Ref_Vtec400;
-	  /**Sedimentary Rocks: link to the structure Sedimentary_Rocks*/	  
+      /**Sedimentary Rocks: link to the structure Sedimentary_Rocks*/      
       Sedi_Rock : BAG {0..3} OF Sedimentary_Rocks;
       /**Igneous Rocks: link to the structure Igneous_Rocks*/
       Igne_Rock : BAG {0..3} OF Igneous_Rocks;
@@ -569,8 +569,8 @@ Cependant, cela rend possible les mises à jour périodiques nécessaires. Le Mo
       Name_Horiz : GeologyModelLookUp_V3_0.Geology_Catalogues.Ref_13103;
       /**Original description according to the legend of the corresponding geological map*/
       Orig_Descr : MTEXT*254;
-	  /**Lithological Description*/
-	  Litho : MANDATORY GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Ref_Vlit400; 
+      /**Lithological Description*/
+      Litho : MANDATORY GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Ref_Vlit400; 
     END Prominent_Lithological_Features_L; 
 
     CLASS Miscellaneous_PT =
@@ -580,8 +580,8 @@ Cependant, cela rend possible les mises à jour périodiques nécessaires. Le Mo
       Geometry : MANDATORY GeometryCHLV95_V1.Coord2;
       /**Object type*/
       Kind : MANDATORY GeologyModelLookUp_V3_0.Geology_Catalogues.Ref_15501;
-	  /**Original description of object*/
-	  Orig_Name : MANDATORY TEXT; 
+      /**Original description of object*/
+      Orig_Name : MANDATORY TEXT; 
     END Miscellaneous_PT;
 
     CLASS Geological_Outlines_L =
@@ -617,9 +617,9 @@ Cependant, cela rend possible les mises à jour périodiques nécessaires. Le Mo
       Azimuth : MANDATORY 0 .. 359 CIRCULAR [Units.Angle_Degree];
       /**Dip: Inclination of the respective point object type. Value measured in degrees from the horizontal (0°) up to the vertical position (90°)*/
       Dip : -999 .. 90;
-	  /**Lithostratigraphic unit of the modelled formation*/
+      /**Lithostratigraphic unit of the modelled formation*/
       Litstrat : MANDATORY GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Ref_Vlit500; 
-	  MANDATORY CONSTRAINT Dip==-999 OR Dip>=0 AND Dip<=90;
+      MANDATORY CONSTRAINT Dip==-999 OR Dip>=0 AND Dip<=90;
     END Slope_Bedrock_PT;
 
     CLASS Contour_Lines_Bedrock_L
@@ -632,7 +632,7 @@ Cependant, cela rend possible les mises à jour périodiques nécessaires. Le Mo
       Type : MANDATORY GeologyModelLookUp_V3_0.Geology_Catalogues.Ref_13902;
       /**Altitude: Elevation of contour lines (altitude in m a.s.l.)*/
       Altitude : MANDATORY -5000.00 .. 5000.00 [INTERLIS.m];
-	  /**Lithostratigraphic unit of the modelled formation*/
+      /**Lithostratigraphic unit of the modelled formation*/
       Litstrat : MANDATORY GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Ref_Vlit500; 
     END Contour_Lines_Bedrock_L;
 
@@ -924,31 +924,31 @@ Cependant, cela rend possible les mises à jour périodiques nécessaires. Le Mo
   TOPIC Meta_Data =
     DEPENDS ON GeologyModelLookUp_V3_0.Geology_Catalogues,GeologyModelLookUp_V3_0.Geology_CatalogueTrees;
 
-	CLASS Mapsheet = 
-	  /**Object type*/ 
-	  Kind : MANDATORY GeologyModelLookUp_V3_0.Geology_Catalogues.Ref_15410; 
-	  /**Original map title of object type*/
-	  Map_title : MANDATORY TEXT; 
-	  /**Originial map number of object type*/
-	  Map_Nbr : MANDATORY TEXT*5; 
-	  /**Map scale of object type*/
-	  Map_Scale : MANDATORY TEXT; 
-	  /**Topographic basis information*/
-	  Basis_Topo : TEXT; 
-	  /**Author(s) of object type*/
-	  Author : MANDATORY TEXT; 
-	  /**Owner of the object type*/
-	  Owner : MANDATORY TEXT; 
-	  /**Period of cartography of the object type*/
-	  Map_Period : TEXT; 
-	  /**Year of publication of the object type*/
-	  Publ_Year : MANDATORY 0 .. 3000; 
-	  /**Basis vector dataset of the object type*/
-	  Basis_Vect : TEXT; 
-	  /**Restriction information: Is the object type available for public (Yes) or under restriction (No)?*/
-	  Restriction : MANDATORY BOOLEAN; 
-	END Mapsheet; 
-	
+    CLASS Mapsheet = 
+      /**Object type*/ 
+      Kind : MANDATORY GeologyModelLookUp_V3_0.Geology_Catalogues.Ref_15410; 
+      /**Original map title of object type*/
+      Map_title : MANDATORY TEXT; 
+      /**Originial map number of object type*/
+      Map_Nbr : MANDATORY TEXT*5; 
+      /**Map scale of object type*/
+      Map_Scale : MANDATORY TEXT; 
+      /**Topographic basis information*/
+      Basis_Topo : TEXT; 
+      /**Author(s) of object type*/
+      Author : MANDATORY TEXT; 
+      /**Owner of the object type*/
+      Owner : MANDATORY TEXT; 
+      /**Period of cartography of the object type*/
+      Map_Period : TEXT; 
+      /**Year of publication of the object type*/
+      Publ_Year : MANDATORY 0 .. 3000; 
+      /**Basis vector dataset of the object type*/
+      Basis_Vect : TEXT; 
+      /**Restriction information: Is the object type available for public (Yes) or under restriction (No)?*/
+      Restriction : MANDATORY BOOLEAN; 
+    END Mapsheet; 
+    
   END Meta_Data; 
-	  
+      
 END DM_Geology_V3_0.

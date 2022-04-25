@@ -1508,8 +1508,8 @@ MODEL GeologyModelLookUp_V3_0 (en) AT "http://models.geo.admin.ch/Swisstopo/" VE
     EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
       Reference(EXTENDED): REFERENCE TO (EXTERNAL) Surface_Water_PLG_Kind;
     END Ref_12701;
-	
-	CLASS Mapsheet_Kind
+
+    CLASS Mapsheet_Kind
     EXTENDS CatalogueObjects_V1.Catalogues.Item =
       GeolCode : MANDATORY TEXT*10;
       Kind : MANDATORY LocalisationCH_V1.MultilingualText;
