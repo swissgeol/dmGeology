@@ -2606,7 +2606,7 @@
 				</Litho>
 			</GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Lithostratigraphic_Units_Litho>
 			<GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Lithostratigraphic_Units_Litho TID="3d52da5e-81b7-4607-9ee8-b929f52c98d1">
-				<IsSuperItem>false</IsSuperItem>
+				<IsSuperItem>true</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Parent REF="bb83bfbc-3ec2-4cbb-a00f-f527de297a17"/>
 				<GeolCode>15102086</GeolCode>
@@ -2706,7 +2706,7 @@
 				</Litho>
 			</GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Lithostratigraphic_Units_Litho>
 			<GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Lithostratigraphic_Units_Litho TID="cd35f75c-c591-4559-9048-32d91fa3cb7a">
-				<IsSuperItem>false</IsSuperItem>
+				<IsSuperItem>true</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Parent REF="bb83bfbc-3ec2-4cbb-a00f-f527de297a17"/>
 				<GeolCode>15102092</GeolCode>
@@ -7362,7 +7362,7 @@
 				</Chrono>
 			</GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Lithostratigraphic_Units_Chrono>
 			<GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Lithostratigraphic_Units_Chrono TID="e11cc754-c5e9-4e9b-b156-d79f70ed097d">
-				<IsSuperItem>false</IsSuperItem>
+				<IsSuperItem>true</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Parent REF="ff1c7b46-dc2f-4d0d-943a-b29a3e7e8572"/>
 				<GeolCode>15001133</GeolCode>
@@ -7382,7 +7382,7 @@
 				</Chrono>
 			</GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Lithostratigraphic_Units_Chrono>
 			<GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Lithostratigraphic_Units_Chrono TID="ca9144a6-1cda-4e1d-806f-b444a836a085">
-				<IsSuperItem>false</IsSuperItem>
+				<IsSuperItem>true</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Parent REF="ff1c7b46-dc2f-4d0d-943a-b29a3e7e8572"/>
 				<GeolCode>15001134</GeolCode>
@@ -8062,7 +8062,7 @@
 				</Chrono>
 			</GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Lithostratigraphic_Units_Chrono>
 			<GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Lithostratigraphic_Units_Chrono TID="b57a2b20-09da-4351-b8c3-692681065219">
-				<IsSuperItem>false</IsSuperItem>
+				<IsSuperItem>true</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Parent REF="e7733f69-42e5-44ce-8bfc-8ec923ce77f7"/>
 				<GeolCode>15001121</GeolCode>
@@ -8082,7 +8082,7 @@
 				</Chrono>
 			</GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Lithostratigraphic_Units_Chrono>
 			<GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Lithostratigraphic_Units_Chrono TID="7ffc68ce-94e6-46da-82ad-831e7dc27ad4">
-				<IsSuperItem>false</IsSuperItem>
+				<IsSuperItem>true</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Parent REF="e7733f69-42e5-44ce-8bfc-8ec923ce77f7"/>
 				<GeolCode>15001122</GeolCode>
@@ -8102,7 +8102,7 @@
 				</Chrono>
 			</GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Lithostratigraphic_Units_Chrono>
 			<GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Lithostratigraphic_Units_Chrono TID="ab01a190-e482-4385-8623-ae2e1a796780">
-				<IsSuperItem>false</IsSuperItem>
+				<IsSuperItem>true</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Parent REF="e7733f69-42e5-44ce-8bfc-8ec923ce77f7"/>
 				<GeolCode>15001123</GeolCode>
@@ -8122,7 +8122,7 @@
 				</Chrono>
 			</GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Lithostratigraphic_Units_Chrono>
 			<GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Lithostratigraphic_Units_Chrono TID="7ab89f60-0e37-4378-878e-69691d527a6b">
-				<IsSuperItem>false</IsSuperItem>
+				<IsSuperItem>true</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Parent REF="3439eda2-5e7d-4f49-8692-93919ec6bc73"/>
 				<GeolCode>15001125</GeolCode>
@@ -8142,7 +8142,7 @@
 				</Chrono>
 			</GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Lithostratigraphic_Units_Chrono>
 			<GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Lithostratigraphic_Units_Chrono TID="d7b51117-b3b6-4a4a-8b57-44fc2d1cbb7c">
-				<IsSuperItem>false</IsSuperItem>
+				<IsSuperItem>true</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Parent REF="3439eda2-5e7d-4f49-8692-93919ec6bc73"/>
 				<GeolCode>15001126</GeolCode>
@@ -8162,7 +8162,7 @@
 				</Chrono>
 			</GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Lithostratigraphic_Units_Chrono>
 			<GeologyModelLookUp_V3_0.Geology_CatalogueTrees.Lithostratigraphic_Units_Chrono TID="7f60c851-5642-4dee-bfed-39b1a08a704f">
-				<IsSuperItem>false</IsSuperItem>
+				<IsSuperItem>true</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Parent REF="3439eda2-5e7d-4f49-8692-93919ec6bc73"/>
 				<GeolCode>15001127</GeolCode>
