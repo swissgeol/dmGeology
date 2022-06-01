@@ -1,0 +1,1627 @@
+INTERLIS 2.3;
+/** GEOLOGIC DATA MODEL LookUp - DATENMODELL GEOLOGIE - MODÈLE DE DONNÉES GÉOLOGIQUES
+* GeologyModelLookUp belongs to the minimal geodata model, topic: GEOLOGY, provider: swisstopo / SWISS GEOLOGICAL SURVEY
+*/
+!!@ Contact = info@swisstopo.ch
+!!@ IDGeoIV = "46.1,46.2,46.4,46.9"
+MODEL GeologyModelLookUp_V3_1 (en) AT "http://models.geo.admin.ch/Swisstopo/" VERSION "2012-10-01"  =
+/**Name of Reference Structure: Ref_+GeolCode of the Attribute*/
+  IMPORTS CatalogueObjects_V1,CatalogueObjectTrees_V1,LocalisationCH_V1;
+
+  TOPIC Geology_Catalogues
+  EXTENDS CatalogueObjects_V1.Catalogues =
+
+    CLASS Unconsolidated_Deposits_PT_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Unconsolidated_Deposits_PT_Kind;
+    STRUCTURE Ref_14401
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Unconsolidated_Deposits_PT_Kind;
+    END Ref_14401;
+
+    CLASS Unconsolidated_Deposits_PT_Status
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Status : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Unconsolidated_Deposits_PT_Status;
+    STRUCTURE Ref_14402
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Unconsolidated_Deposits_PT_Status;
+    END Ref_14402;
+
+    CLASS Unconsolidated_Deposits_PT_Rock_Typ
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Rock_Typ : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Unconsolidated_Deposits_PT_Rock_Typ;
+    STRUCTURE Ref_14403
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Unconsolidated_Deposits_PT_Rock_Typ;
+    END Ref_14403;
+
+    CLASS Unconsolidated_Deposits_PT_Rock_Spe
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Rock_Spe : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Unconsolidated_Deposits_PT_Rock_Spe;
+    STRUCTURE Ref_14404
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Unconsolidated_Deposits_PT_Rock_Spe;
+    END Ref_14404;
+
+    CLASS Unconsolidated_Deposits_PLG_Kind 
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Unconsolidated_Deposits_PLG_Kind;
+    STRUCTURE Ref_14517
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Unconsolidated_Deposits_PLG_Kind;
+    END Ref_14517;
+
+    CLASS Unconsolidated_Deposits_PLG_Composit
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Composit : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Unconsolidated_Deposits_PLG_Composit;
+    STRUCTURE Ref_14508
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Unconsolidated_Deposits_PLG_Composit;
+    END Ref_14508;
+
+    CLASS Unconsolidated_Deposits_PLG_Admixtur
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Admixtur : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Unconsolidated_Deposits_PLG_Admixtur;
+    STRUCTURE Ref_14509
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Unconsolidated_Deposits_PLG_Admixtur;
+    END Ref_14509;
+
+    CLASS Unconsolidated_Deposits_PLG_Structur
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Structur : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Unconsolidated_Deposits_PLG_Structur;
+    STRUCTURE Ref_14510
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Unconsolidated_Deposits_PLG_Structur;
+    END Ref_14510;
+
+    CLASS Unconsolidated_Deposits_PLG_Charact
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Charact : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Unconsolidated_Deposits_PLG_Charact;
+    STRUCTURE Ref_14511
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Unconsolidated_Deposits_PLG_Charact;
+    END Ref_14511;
+
+    CLASS Unconsolidated_Deposits_PLG_Morpholo
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Morpholo : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Unconsolidated_Deposits_PLG_Morpholo;
+    STRUCTURE Ref_14512
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Unconsolidated_Deposits_PLG_Morpholo;
+    END Ref_14512;
+
+    CLASS Unconsolidated_Deposits_PLG_Glac_Typ
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Glac_Typ : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Unconsolidated_Deposits_PLG_Glac_Typ;
+    STRUCTURE Ref_14513
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Unconsolidated_Deposits_PLG_Glac_Typ;
+    END Ref_14513;
+
+    CLASS Unconsolidated_Deposits_PLG_Thin_Cov
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Thin_Cov : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Unconsolidated_Deposits_PLG_Thin_Cov;
+    STRUCTURE Ref_14515
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Unconsolidated_Deposits_PLG_Thin_Cov;
+    END Ref_14515;
+
+    CLASS Bedrock_PLG_Kind 
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Bedrock_PLG_Kind;
+    STRUCTURE Ref_14334
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Bedrock_PLG_Kind;
+    END Ref_14334;
+
+    /*
+	CLASS Bedrock_PLG_Fm_Homog 
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Fm_Homog : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Bedrock_PLG_Fm_Homog;
+    STRUCTURE Ref_14302
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Bedrock_PLG_Fm_Homog;
+    END Ref_14302;
+	**/
+
+    CLASS Bedrock_PLG_Sedimentary_Rocks_Sedi_Main_Com 
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Main_Com : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Bedrock_PLG_Sedimentary_Rocks_Sedi_Main_Com;
+    STRUCTURE Ref_15602
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Bedrock_PLG_Sedimentary_Rocks_Sedi_Main_Com;
+    END Ref_15602;
+
+    CLASS Bedrock_PLG_Sedimentary_Rocks_Sedi_Seco_Com 
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Seco_Com : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Bedrock_PLG_Sedimentary_Rocks_Sedi_Seco_Com;
+    STRUCTURE Ref_20001
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Bedrock_PLG_Sedimentary_Rocks_Sedi_Seco_Com;
+    END Ref_20001;
+
+    CLASS Bedrock_PLG_Sedimentary_Rocks_Sedi_Bond_Mat 
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Bond_Mat : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Bedrock_PLG_Sedimentary_Rocks_Sedi_Bond_Mat;
+    STRUCTURE Ref_14313
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Bedrock_PLG_Sedimentary_Rocks_Sedi_Bond_Mat;
+    END Ref_14313;
+
+    CLASS Bedrock_PLG_Sedimentary_Rocks_Sedi_Bedding 
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Bedding : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Bedrock_PLG_Sedimentary_Rocks_Sedi_Bedding;
+    STRUCTURE Ref_20101
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Bedrock_PLG_Sedimentary_Rocks_Sedi_Bedding;
+    END Ref_20101;
+
+    CLASS Bedrock_PLG_Sedimentary_Rocks_Sedi_Str 
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Sedi_Str : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Bedrock_PLG_Sedimentary_Rocks_Sedi_Str;
+    STRUCTURE Ref_20201
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Bedrock_PLG_Sedimentary_Rocks_Sedi_Str;
+    END Ref_20201;
+
+    CLASS Bedrock_PLG_Sedimentary_Rocks_Sedi_Tex 
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Sedi_Tex : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Bedrock_PLG_Sedimentary_Rocks_Sedi_Tex;
+    STRUCTURE Ref_20301
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Bedrock_PLG_Sedimentary_Rocks_Sedi_Tex;
+    END Ref_20301;
+
+    CLASS Bedrock_PLG_Igneous_Rocks_Igne_Tex 
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Igne_Tex : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Bedrock_PLG_Igneous_Rocks_Igne_Tex;
+    STRUCTURE Ref_14317
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Bedrock_PLG_Igneous_Rocks_Igne_Tex;
+    END Ref_14317;
+
+    CLASS Bedrock_PLG_Igneous_Rocks_Igne_Grain_Si 
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Grain_Si : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Bedrock_PLG_Igneous_Rocks_Igne_Grain_Si;
+    STRUCTURE Ref_14318
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Bedrock_PLG_Igneous_Rocks_Igne_Grain_Si;
+    END Ref_14318;
+
+    CLASS Bedrock_PLG_Igneous_Rocks_Igne_Affinity 
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Affinity : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Bedrock_PLG_Igneous_Rocks_Igne_Affinity;
+    STRUCTURE Ref_15733
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Bedrock_PLG_Igneous_Rocks_Igne_Affinity;
+    END Ref_15733;
+
+    CLASS Bedrock_PLG_Metamorphic_Rocks_Meta_Mineral
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Mineral : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Bedrock_PLG_Metamorphic_Rocks_Meta_Mineral;
+    STRUCTURE Ref_20401
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Bedrock_PLG_Metamorphic_Rocks_Meta_Mineral;
+    END Ref_20401;
+
+    CLASS Bedrock_PLG_Metamorphic_Rocks_Meta_Str
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Meta_Str : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Bedrock_PLG_Metamorphic_Rocks_Meta_Str;
+    STRUCTURE Ref_20501
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Bedrock_PLG_Metamorphic_Rocks_Meta_Str;
+    END Ref_20501;
+
+    CLASS Instability_Structures_PT_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Instability_Structures_PT_Kind;
+    STRUCTURE Ref_11601
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Instability_Structures_PT_Kind;
+    END Ref_11601;
+
+    CLASS Instability_Structures_L_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Instability_Structures_L_Kind;
+    STRUCTURE Ref_11701
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Instability_Structures_L_Kind;
+    END Ref_11701;
+
+    /**
+	CLASS Instabilities_within_Unconsolidated_Deposits_PLG_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Instabilities_within_Unconsolidated_Deposits_PLG_Kind;
+    STRUCTURE Ref_11801
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Instabilities_within_Unconsolidated_Deposits_PLG_Kind;
+    END Ref_11801;
+	*/
+
+    /**
+	CLASS Instabilities_within_Bedrock_PLG_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Instabilities_within_Bedrock_PLG_Kind;
+    STRUCTURE Ref_11501
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Instabilities_within_Bedrock_PLG_Kind;
+    END Ref_11501;
+	*/
+
+    /**
+	CLASS Instabilities_within_Bedrock_PLG_Main_Mov
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Main_Mov : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Instabilities_within_Bedrock_PLG_Main_Mov;
+    STRUCTURE Ref_11502
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Instabilities_within_Bedrock_PLG_Main_Mov;
+    END Ref_11502;
+	*/
+
+	CLASS Instabilities_PLG_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Instabilities_PLG_Kind;
+    STRUCTURE Ref_15801
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Instabilities_PLG_Kind;
+    END Ref_15801;
+	
+	CLASS Instabilities_PLG_Main_Mov
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Instabilities_PLG_Main_Mov;
+    STRUCTURE Ref_11502
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Instabilities_PLG_Main_Mov;
+    END Ref_11502;
+
+    CLASS Glacial_Structures_PT_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Glacial_Structures_PT_Kind;
+    STRUCTURE Ref_11201
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Glacial_Structures_PT_Kind;
+    END Ref_11201;
+
+    CLASS Glacial_and_Periglacial_Structures_L_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Glacial_and_Periglacial_Structures_L_Kind;
+    STRUCTURE Ref_11301
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Glacial_and_Periglacial_Structures_L_Kind;
+    END Ref_11301;
+
+    CLASS Glacial_and_Periglacial_Structures_L_Morai_Mo
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+    /**if GeolCode=Ggla201001 Morai_Mo is mandatory; if GeolCode is any other value, Morai_Mo is not applicable*/
+      GeolCode : MANDATORY TEXT*10;
+      Morai_Mo : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Glacial_and_Periglacial_Structures_L_Morai_Mo;
+    STRUCTURE Ref_11302
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Glacial_and_Periglacial_Structures_L_Morai_Mo;
+    END Ref_11302;
+
+    CLASS Glacial_and_Periglacial_Structures_L_Glac_Typ
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+    /**if GeolCode=Ggla201001 Glac_Typ is mandatory; if GeolCode is any other value, Glac_Typ is not applicable*/
+      GeolCode : MANDATORY TEXT*10;
+      Glac_Typ : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Glacial_and_Periglacial_Structures_L_Glac_Typ;
+    STRUCTURE Ref_11303
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Glacial_and_Periglacial_Structures_L_Glac_Typ;
+    END Ref_11303;
+
+    CLASS Glacial_and_Periglacial_Structures_L_Ice_M_P
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Ice_M_P : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Glacial_and_Periglacial_Structures_L_Ice_M_P;
+    STRUCTURE Ref_11304
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Glacial_and_Periglacial_Structures_L_Ice_M_P;
+    END Ref_11304;
+
+    CLASS Glacial_and_Periglacial_Structures_L_Quat_Str
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Quat_Str : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Glacial_and_Periglacial_Structures_L_Quat_Str;
+    STRUCTURE Ref_11305
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Glacial_and_Periglacial_Structures_L_Quat_Str;
+    END Ref_11305;
+
+    CLASS Glacial_Structures_PLG_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Glacial_Structures_PLG_Kind;
+    STRUCTURE Ref_11401
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Glacial_Structures_PLG_Kind;
+    END Ref_11401;
+
+    CLASS Erosional_Structures_PT_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Erosional_Structures_PT_Kind;
+    STRUCTURE Ref_11001
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Erosional_Structures_PT_Kind;
+    END Ref_11001;
+
+    CLASS Erosional_Structures_L_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Erosional_Structures_L_Kind;
+    STRUCTURE Ref_11101
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Erosional_Structures_L_Kind;
+    END Ref_11101;
+
+    CLASS Karstic_Structures_PT_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Karstic_Structures_PT_Kind;
+    STRUCTURE Ref_11901
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Karstic_Structures_PT_Kind;
+    END Ref_11901;
+
+    CLASS Karstic_Structures_PLG_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Karstic_Structures_PLG_Kind;
+    STRUCTURE Ref_12001
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Karstic_Structures_PLG_Kind;
+    END Ref_12001;
+
+    CLASS Alluvial_and_Lacustrine_Structures_L_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Alluvial_and_Lacustrine_Structures_L_Kind;
+    STRUCTURE Ref_10901
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Alluvial_and_Lacustrine_Structures_L_Kind;
+    END Ref_10901;
+
+    CLASS Alluvial_and_Lacustrine_Structures_L_Age
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Age : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Alluvial_and_Lacustrine_Structures_L_Age;
+    STRUCTURE Ref_10902
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Alluvial_and_Lacustrine_Structures_L_Age;
+    END Ref_10902;
+
+    CLASS Deformation_Structures_PT_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Deformation_Structures_PT_Kind;
+    STRUCTURE Ref_14601
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Deformation_Structures_PT_Kind;
+    END Ref_14601;
+
+    CLASS Deformation_Structures_PT_Fold_Typ
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Fold_Typ : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Deformation_Structures_PT_Fold_Typ;
+    STRUCTURE Ref_14604
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Deformation_Structures_PT_Fold_Typ;
+    END Ref_14604;
+
+    /**
+	CLASS Deformation_Structures_PT_Fold_For
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Fold_For : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Deformation_Structures_PT_Fold_For;
+    STRUCTURE Ref_14605
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Deformation_Structures_PT_Fold_For;
+    END Ref_14605;
+	*/
+
+    CLASS Deformation_Structures_L_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Deformation_Structures_L_Kind;
+    STRUCTURE Ref_14701
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Deformation_Structures_L_Kind;
+    END Ref_14701;
+
+    CLASS Deformation_Structures_PLG_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Deformation_Structures_PLG_Kind;
+    STRUCTURE Ref_14801
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Deformation_Structures_PLG_Kind;
+    END Ref_14801;
+
+    CLASS Deformation_Structures_PLG_Type
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Type : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Deformation_Structures_PLG_Type;
+    STRUCTURE Ref_14802
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Deformation_Structures_PLG_Type;
+    END Ref_14802;
+
+    /**
+	CLASS Deformation_Structures_PLG_Gen_Rela
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Gen_Rela : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Deformation_Structures_PLG_Gen_Rela;
+    STRUCTURE Ref_14803
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Deformation_Structures_PLG_Gen_Rela;
+    END Ref_14803;
+	*/
+
+	CLASS Tectonic_Boundaries_L_Lim_Typ
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Tectonic_Boundaries_L_Lim_Typ;
+    STRUCTURE Ref_14910
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Tectonic_Boundaries_L_Lim_Typ;
+    END Ref_14910;
+
+    CLASS Tectonic_Boundaries_L_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Tectonic_Boundaries_L_Kind;
+    STRUCTURE Ref_14901
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Tectonic_Boundaries_L_Kind;
+    END Ref_14901;
+	
+    CLASS Tectonic_Boundaries_L_Fault_Mo
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Fault_Mo : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Tectonic_Boundaries_L_Fault_Mo;
+    STRUCTURE Ref_14902
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Tectonic_Boundaries_L_Fault_Mo;
+    END Ref_14902;
+
+    CLASS Tectonic_Boundaries_L_Verti_Mo
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Verti_Mo : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Tectonic_Boundaries_L_Verti_Mo;
+    STRUCTURE Ref_14903
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Tectonic_Boundaries_L_Verti_Mo;
+    END Ref_14903;
+
+    CLASS Tectonic_Boundaries_L_Horiz_Mo
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Horiz_Mo : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Tectonic_Boundaries_L_Horiz_Mo;
+    STRUCTURE Ref_14904
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Tectonic_Boundaries_L_Horiz_Mo;
+    END Ref_14904;
+
+    CLASS Tectonic_Boundaries_L_Status
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Status : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Tectonic_Boundaries_L_Status;
+    STRUCTURE Ref_14906
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Tectonic_Boundaries_L_Status;
+    END Ref_14906;
+
+    /**
+	CLASS Tectonic_Boundaries_L_Activity
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Activity : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Tectonic_Boundaries_L_Activity;
+    STRUCTURE Ref_14907
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Tectonic_Boundaries_L_Activity;
+    END Ref_14907;
+	*/
+
+    CLASS Tectonic_Boundaries_L_Meta_Sta
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Meta_Sta : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Tectonic_Boundaries_L_Meta_Sta;
+    STRUCTURE Ref_14908
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Tectonic_Boundaries_L_Meta_Sta;
+    END Ref_14908;
+
+    CLASS Folds_PT_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Folds_PT_Kind;
+    STRUCTURE Ref_13601
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Folds_PT_Kind;
+    END Ref_13601;
+
+     CLASS Folds_PT_Fold_Typ
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Fold_Typ : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Folds_PT_Fold_Typ;
+    STRUCTURE Ref_13602
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Folds_PT_Fold_Typ;
+    END Ref_13602;
+
+    /**
+	CLASS Folds_PT_Fold_For
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Fold_For : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Folds_PT_Fold_For;
+    STRUCTURE Ref_13603
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Folds_PT_Fold_For;
+    END Ref_13603;
+	*/
+
+    CLASS Folds_PT_Phase
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Phase : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Folds_PT_Phase;
+    STRUCTURE Ref_13604
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Folds_PT_Phase;
+    END Ref_13604;
+
+    CLASS Lineation_PT_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Lineation_PT_Kind;
+    STRUCTURE Ref_13701
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Lineation_PT_Kind;
+    END Ref_13701;
+
+    CLASS Planar_Structures_PT_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Planar_Structures_PT_Kind;
+    STRUCTURE Ref_13801
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Planar_Structures_PT_Kind;
+    END Ref_13801;
+
+    CLASS Planar_Structures_PT_Polarity
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Polarity : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Planar_Structures_PT_Polarity;
+    STRUCTURE Ref_13802
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Planar_Structures_PT_Polarity;
+    END Ref_13802;
+
+    CLASS Planar_Structures_PT_Phase
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Phase : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Planar_Structures_PT_Phase;
+    STRUCTURE Ref_13803
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Planar_Structures_PT_Phase;
+    END Ref_13803;
+
+    CLASS Anomalies_PT_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Anomalies_PT_Kind;
+    STRUCTURE Ref_12801
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Anomalies_PT_Kind;
+    END Ref_12801;
+
+    CLASS Anomalies_PT_Type
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Type : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Anomalies_PT_Type;
+    STRUCTURE Ref_12802
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Anomalies_PT_Type;
+    END Ref_12802;
+
+    CLASS Fossils_PT_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Fossils_PT_Kind;
+    STRUCTURE Ref_12901
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Fossils_PT_Kind;
+    END Ref_12901;
+
+    CLASS Fossils_PT_Division
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Division : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Fossils_PT_Division;
+    STRUCTURE Ref_12902
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Fossils_PT_Division;
+    END Ref_12902;
+
+    CLASS Fossils_PT_System
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      System : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Fossils_PT_System;
+    STRUCTURE Ref_12903
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Fossils_PT_System;
+    END Ref_12903;
+
+    CLASS Fossils_PT_Dat_Meth
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Dat_Meth : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Fossils_PT_Dat_Meth;
+    STRUCTURE Ref_12904
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Fossils_PT_Dat_Meth;
+    END Ref_12904;
+
+    CLASS Fossils_PT_Status
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Status : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Fossils_PT_Status;
+    STRUCTURE Ref_12905
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Fossils_PT_Status;
+    END Ref_12905;
+
+    CLASS Indication_of_Resources_PT_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Indication_of_Resources_PT_Kind;
+    STRUCTURE Ref_13201
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Indication_of_Resources_PT_Kind;
+    END Ref_13201;
+
+    CLASS Indication_of_Resources_PT_Status
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Status : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Indication_of_Resources_PT_Status;
+    STRUCTURE Ref_13202
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Indication_of_Resources_PT_Status;
+    END Ref_13202;
+
+    CLASS Indication_of_Resources_PT_Material
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Material : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Indication_of_Resources_PT_Material;
+    STRUCTURE Ref_13203
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Indication_of_Resources_PT_Material;
+    END Ref_13203;
+
+    CLASS Mineralised_Zone_L_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Mineralised_Zone_L_Kind;
+    STRUCTURE Ref_13301
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Mineralised_Zone_L_Kind;
+    END Ref_13301;
+
+    CLASS Sedimentary_Structures_PT_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Sedimentary_Structures_PT_Kind;
+    STRUCTURE Ref_13401
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Sedimentary_Structures_PT_Kind;
+    END Ref_13401;
+
+    CLASS Type_Localities_PT_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Type_Localities_PT_Kind;
+    STRUCTURE Ref_13501
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Type_Localities_PT_Kind;
+    END Ref_13501;
+
+    CLASS Type_Localities_PT_Strati
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Strati : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Type_Localities_PT_Strati;
+    STRUCTURE Ref_13502
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Type_Localities_PT_Strati;
+    END Ref_13502;
+
+	CLASS Prominent_Lithological_Features_L_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Cong_Spe : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Prominent_Lithological_Features_L_Kind;
+    STRUCTURE Ref_13101
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Prominent_Lithological_Features_L_Kind;
+    END Ref_13101;
+
+    CLASS Prominent_Lithological_Features_L_Cong_Spe
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Cong_Spe : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Prominent_Lithological_Features_L_Cong_Spe;
+    STRUCTURE Ref_13102
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Prominent_Lithological_Features_L_Cong_Spe;
+    END Ref_13102;
+
+    CLASS Prominent_Lithological_Features_L_Name_Horiz
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Name_Horiz : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Prominent_Lithological_Features_L_Name_Horiz;
+    STRUCTURE Ref_13103
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Prominent_Lithological_Features_L_Name_Horiz;
+    END Ref_13103;
+
+    CLASS Miscellaneous_PT_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Name_Horiz : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Miscellaneous_PT_Kind;
+    STRUCTURE Ref_15501
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Miscellaneous_PT_Kind;
+    END Ref_15501;
+
+    CLASS Geological_Outlines_L_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Geological_Outlines_L_Kind;
+    STRUCTURE Ref_13001
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Geological_Outlines_L_Kind;
+    END Ref_13001;
+
+    CLASS Geological_Outlines_L_Status
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Status : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Geological_Outlines_L_Status;
+    STRUCTURE Ref_13002
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Geological_Outlines_L_Status;
+    END Ref_13002;
+
+    CLASS Slope_Bedrock_PT_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Slope_Bedrock_PT_Kind;
+    STRUCTURE Ref_14201
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Slope_Bedrock_PT_Kind;
+    END Ref_14201;
+
+    CLASS Slope_Bedrock_PT_Type
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Type : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Slope_Bedrock_PT_Type;
+    STRUCTURE Ref_14202
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Slope_Bedrock_PT_Type;
+    END Ref_14202;
+
+    CLASS Contour_Lines_Bedrock_L_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Contour_Lines_Bedrock_L_Kind;
+    STRUCTURE Ref_13901
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Contour_Lines_Bedrock_L_Kind;
+    END Ref_13901;
+
+    CLASS Contour_Lines_Bedrock_L_Type
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Type : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Contour_Lines_Bedrock_L_Type;
+    STRUCTURE Ref_13902
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Contour_Lines_Bedrock_L_Type;
+    END Ref_13902;
+
+    CLASS Modelled_Water_Table_PT_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Modelled_Water_Table_PT_Kind;
+    STRUCTURE Ref_14101
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Modelled_Water_Table_PT_Kind;
+    END Ref_14101;
+
+    CLASS Contour_Lines_Hydro_L_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Contour_Lines_Hydro_L_Kind;
+    STRUCTURE Ref_14001
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Contour_Lines_Hydro_L_Kind;
+    END Ref_14001;
+
+    CLASS Contour_Lines_Hydro_L_Confine
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Confine : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Contour_Lines_Hydro_L_Confine;
+    STRUCTURE Ref_14002
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Contour_Lines_Hydro_L_Confine;
+    END Ref_14002;
+
+    CLASS Contour_Lines_Hydro_L_Wa_Table
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Wa_Table : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Contour_Lines_Hydro_L_Wa_Table;
+    STRUCTURE Ref_14004
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Contour_Lines_Hydro_L_Wa_Table;
+    END Ref_14004;
+
+    CLASS Archaeology_PT_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Archaeology_PT_Kind;
+    STRUCTURE Ref_10101
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Archaeology_PT_Kind;
+    END Ref_10101;
+
+    CLASS Archaeology_PT_Epoch
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Epoch : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Archaeology_PT_Epoch;
+    STRUCTURE Ref_10102
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Archaeology_PT_Epoch;
+    END Ref_10102;
+
+    CLASS Archaeology_PT_Period
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Period : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Archaeology_PT_Period;
+    STRUCTURE Ref_10103
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Archaeology_PT_Period;
+    END Ref_10103;
+
+    CLASS Archaeology_PT_Age
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Age : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Archaeology_PT_Age;
+    STRUCTURE Ref_10104
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Archaeology_PT_Age;
+    END Ref_10104;
+
+    CLASS Archaeology_PT_Type
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Type : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Archaeology_PT_Type;
+    STRUCTURE Ref_10105
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Archaeology_PT_Type;
+    END Ref_10105;
+
+    CLASS Archaeology_L_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Archaeology_L_Kind;
+    STRUCTURE Ref_10201
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Archaeology_L_Kind;
+    END Ref_10201;
+
+    CLASS Archaeology_L_Epoch
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Epoch : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Archaeology_L_Epoch;
+    STRUCTURE Ref_10202
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Archaeology_L_Epoch;
+    END Ref_10202;
+
+    CLASS Archaeology_L_Period
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Period : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Archaeology_L_Period;
+    STRUCTURE Ref_10203
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Archaeology_L_Period;
+    END Ref_10203;
+
+    CLASS Archaeology_L_Age
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Age : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Archaeology_L_Age;
+    STRUCTURE Ref_10204
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Archaeology_L_Age;
+    END Ref_10204;
+
+    CLASS Archaeology_PLG_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Archaeology_PLG_Kind;
+    STRUCTURE Ref_10301
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Archaeology_PLG_Kind;
+    END Ref_10301;
+
+    CLASS Archaeology_PLG_Epoch
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Epoch : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Archaeology_PLG_Epoch;
+    STRUCTURE Ref_10302
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Archaeology_PLG_Epoch;
+    END Ref_10302;
+
+    CLASS Archaeology_PLG_Period
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Period : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Archaeology_PLG_Period;
+    STRUCTURE Ref_10303
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Archaeology_PLG_Period;
+    END Ref_10303;
+
+    CLASS Archaeology_PLG_Age
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Age : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Archaeology_PLG_Age;
+    STRUCTURE Ref_10304
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Archaeology_PLG_Age;
+    END Ref_10304;
+
+    CLASS Exploitation_Geomaterials_PT_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Exploitation_Geomaterials_PT_Kind;
+    STRUCTURE Ref_10601
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Exploitation_Geomaterials_PT_Kind;
+    END Ref_10601;
+
+    CLASS Exploitation_Geomaterials_PT_Status
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Status : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Exploitation_Geomaterials_PT_Status;
+    STRUCTURE Ref_10603
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Exploitation_Geomaterials_PT_Status;
+    END Ref_10603;
+
+    CLASS Exploitation_Geomaterials_PT_Targ_Mat
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Targ_Mat : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Exploitation_Geomaterials_PT_Targ_Mat;
+    STRUCTURE Ref_10605
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Exploitation_Geomaterials_PT_Targ_Mat;
+    END Ref_10605;
+
+    CLASS Exploitation_Geomaterials_L_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Exploitation_Geomaterials_L_Kind;
+    STRUCTURE Ref_10701
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Exploitation_Geomaterials_L_Kind;
+    END Ref_10701;
+
+    CLASS Exploitation_Geomaterials_L_Status
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Status : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Exploitation_Geomaterials_L_Status;
+    STRUCTURE Ref_10702
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Exploitation_Geomaterials_L_Status;
+    END Ref_10702;
+
+    CLASS Exploitation_Geomaterials_PLG_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Exploitation_Geomaterials_PLG_Kind;
+    STRUCTURE Ref_10801
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Exploitation_Geomaterials_PLG_Kind;
+    END Ref_10801;
+
+    CLASS Exploitation_Geomaterials_PLG_Status
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Status : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Exploitation_Geomaterials_PLG_Status;
+    STRUCTURE Ref_10802
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Exploitation_Geomaterials_PLG_Status;
+    END Ref_10802;
+
+    CLASS Exploitation_Geomaterials_PLG_Targ_Mat
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Targ_Mat : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Exploitation_Geomaterials_PLG_Targ_Mat;
+    STRUCTURE Ref_10804
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Exploitation_Geomaterials_PLG_Targ_Mat;
+    END Ref_10804;
+
+    CLASS Boreholes_PT_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Boreholes_PT_Kind;
+    STRUCTURE Ref_10501
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Boreholes_PT_Kind;
+    END Ref_10501;
+
+    /**
+	CLASS Boreholes_PT_Drill_Mo
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Drill_Mo : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Boreholes_PT_Drill_Mo;
+    STRUCTURE Ref_10502
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Boreholes_PT_Drill_Mo;
+    END Ref_10502;
+	*/
+
+    CLASS Boreholes_PT_Main_Tar
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Main_Tar : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Boreholes_PT_Main_Tar;
+    STRUCTURE Ref_10505
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Boreholes_PT_Main_Tar;
+    END Ref_10505;
+
+    CLASS Boreholes_PT_Targ_Mat
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Targ_Mat : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Boreholes_PT_Targ_Mat;
+    STRUCTURE Ref_10506
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Boreholes_PT_Targ_Mat;
+    END Ref_10506;
+
+    CLASS Artificial_Surface_Modifications_PLG_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Artificial_Surface_Modifications_PLG_Kind;
+    STRUCTURE Ref_10401
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Artificial_Surface_Modifications_PLG_Kind;
+    END Ref_10401;
+
+    CLASS Construction_PT_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Construction_PT_Kind;
+    STRUCTURE Ref_12101
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Construction_PT_Kind;
+    END Ref_12101;
+
+    CLASS Construction_PT_Status
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Status : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Construction_PT_Status;
+    STRUCTURE Ref_12102
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Construction_PT_Status;
+    END Ref_12102;
+
+    CLASS Construction_PT_Epoch
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Epoch : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Construction_PT_Epoch;
+    STRUCTURE Ref_12103
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Construction_PT_Epoch;
+    END Ref_12103;
+
+    CLASS Construction_L_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Construction_L_Kind;
+    STRUCTURE Ref_12201
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Construction_L_Kind;
+    END Ref_12201;
+
+    CLASS Construction_L_Combi
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Combi : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Construction_L_Combi;
+    STRUCTURE Ref_12202
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Construction_L_Combi;
+    END Ref_12202;
+
+    CLASS Palaeohydrology_L_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Palaeohydrology_L_Kind;
+    STRUCTURE Ref_12301
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Palaeohydrology_L_Kind;
+    END Ref_12301;
+
+    CLASS Palaeohydrology_L_Rel_Age
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Rel_Age : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Palaeohydrology_L_Rel_Age;
+    STRUCTURE Ref_12302
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Palaeohydrology_L_Rel_Age;
+    END Ref_12302;
+
+    CLASS Subsurface_Water_L_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Subsurface_Water_L_Kind;
+    STRUCTURE Ref_12401
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Subsurface_Water_L_Kind;
+    END Ref_12401;
+
+    CLASS Subsurface_Water_L_Combi
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Combi : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Subsurface_Water_L_Combi;
+    STRUCTURE Ref_12402
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Subsurface_Water_L_Combi;
+    END Ref_12402;
+
+    CLASS Surface_Water_PT_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Surface_Water_PT_Kind;
+    STRUCTURE Ref_12501
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Surface_Water_PT_Kind;
+    END Ref_12501;
+
+    CLASS Surface_Water_PT_Status
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Status : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Surface_Water_PT_Status;
+    STRUCTURE Ref_12502
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Surface_Water_PT_Status;
+    END Ref_12502;
+
+    CLASS Surface_Water_PT_Flow_Con
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Flow_Con : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Surface_Water_PT_Flow_Con;
+    STRUCTURE Ref_12503
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Surface_Water_PT_Flow_Con;
+    END Ref_12503;
+
+    CLASS Surface_Water_PT_Type
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Type : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Surface_Water_PT_Type;
+    STRUCTURE Ref_12504
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Surface_Water_PT_Type;
+    END Ref_12504;
+
+    CLASS Surface_Water_PT_Dis_Loca
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Dis_Loca : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Surface_Water_PT_Dis_Loca;
+    STRUCTURE Ref_12505
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Surface_Water_PT_Dis_Loca;
+    END Ref_12505;
+
+    CLASS Surface_Water_PT_Combi
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Combi : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Surface_Water_PT_Combi;
+    STRUCTURE Ref_12506
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Surface_Water_PT_Combi;
+    END Ref_12506;
+
+    CLASS Surface_Water_L_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Surface_Water_L_Kind;
+    STRUCTURE Ref_12601
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Surface_Water_L_Kind;
+    END Ref_12601;
+
+    CLASS Surface_Water_PLG_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Surface_Water_PLG_Kind;
+    STRUCTURE Ref_12701
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Surface_Water_PLG_Kind;
+    END Ref_12701;
+
+    CLASS Mapsheet_Kind
+    EXTENDS CatalogueObjects_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Kind : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Mapsheet_Kind;
+    STRUCTURE Ref_15410
+    EXTENDS CatalogueObjects_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Mapsheet_Kind;
+    END Ref_15410;
+
+  END Geology_Catalogues;
+
+!!#########################################################################################################################################
+
+  TOPIC Geology_CatalogueTrees
+  EXTENDS CatalogueObjectTrees_V1.Catalogues =
+
+    CLASS Lithostratigraphic_Units_Litstrat 
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      LitStrat : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Lithostratigraphic_Units_Litstrat;
+    STRUCTURE Ref_Vlit500
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Lithostratigraphic_Units_Litstrat;
+    END Ref_Vlit500;
+
+    CLASS Lithostratigraphic_Units_Litho 
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Litho : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Lithostratigraphic_Units_Litho;
+    STRUCTURE Ref_Vlit400
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Lithostratigraphic_Units_Litho;
+    END Ref_Vlit400;
+
+    CLASS Lithostratigraphic_Units_Chrono
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Chrono : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Lithostratigraphic_Units_Chrono;
+    STRUCTURE Ref_Vchr401
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Lithostratigraphic_Units_Chrono;
+    END Ref_Vchr401;
+
+    CLASS Lithostratigraphic_Units_Tecto 
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+      GeolCode : MANDATORY TEXT*10;
+      Tecto : MANDATORY LocalisationCH_V1.MultilingualText;
+    UNIQUE GeolCode;
+    END Lithostratigraphic_Units_Tecto;
+    STRUCTURE Ref_Vtec400
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference(EXTENDED): REFERENCE TO (EXTERNAL) Lithostratigraphic_Units_Tecto;
+    END Ref_Vtec400;
+
+  END Geology_CatalogueTrees;
+  
+END GeologyModelLookUp_V3_1.
